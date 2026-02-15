@@ -8,7 +8,7 @@ import re
 import logging
 from typing import Optional
 from datetime import datetime
-from extractors.financial_rules import CategoryState, TransactionType, apply_sign_to_amount, format_amount_display
+from .financial_rules import CategoryState, TransactionType, apply_sign_to_amount, format_amount_display
 
 logger = logging.getLogger(__name__)
 
@@ -52,11 +52,25 @@ class TransactionExtractor:
     Handles line-by-line parsing with category state tracking.
     """
     
-    # Date patterns (MM/DD/YYYY or MM/DD)
-    DATE_PATTERN = re.compile(r'^(\d{1,2}/\d{1,2}/\d{4}|\d{1,2}/\d{1,2})')
+    # Date patterns - supports multiple formats:
+    # - MM/DD/YYYY (e.g., 01/15/2026)
+    # - MM/DD/YY   (e.g., 01/15/25)
+    # - MM/DD      (e.g., 01/15)
+    # Also supports: DD-MM-YYYY, YYYY-MM-DD, DD/MM/YYYY, etc.
+    DATE_PATTERN = re.compile(
+        r'^('
+        r'\d{1,2}[/-]\d{1,2}[/-]\d{4}|'  # MM/DD/YYYY or DD-MM-YYYY
+        r'\d{1,2}[/-]\d{1,2}[/-]\d{2}|'   # MM/DD/YY or DD-MM-YY
+        r'\d{4}[/-]\d{1,2}[/-]\d{1,2}|'   # YYYY-MM-DD or YYYY/MM/DD
+        r'\d{1,2}[/-]\d{1,2}'              # MM/DD or DD-MM
+        r')'
+    )
     
-    # Amount patterns - matches numbers with optional commas and decimals
-    AMOUNT_PATTERN = re.compile(r'(\d{1,3}(?:,\d{3})*(?:\.\d{2})?)')
+    # Amount patterns - matches complete amounts with word boundaries
+    # Fixed: Now matches full amount as one unit (e.g., "6,000.00" not ['6', '000', '00'])
+    # \b = word boundary ensures we match complete numbers
+    # Made decimal mandatory since bank amounts always have .XX cents
+    AMOUNT_PATTERN = re.compile(r'\b(\d{1,3}(?:,\d{3})*\.\d{2})\b')
     
     def __init__(self):
         """Initialize extractor with category state tracker."""
@@ -116,6 +130,12 @@ class TransactionExtractor:
                 f"{self.stats['category_changes']} category changes"
             )
             
+            # DEBUG: Log if no transactions found
+            if self.stats['transactions_found'] == 0 and self.stats['category_changes'] > 0:
+                logger.warning(f"No transactions found in {len(lines)} lines. Category changes detected: {self.stats['category_changes']}")
+                logger.warning(f"Current category state: {self.category_state.get_state()}, valid={self.category_state.is_valid_state()}")
+                logger.warning("Possible issues: Date format mismatch, amount format mismatch, or all transactions filtered out")
+            
             if self.stats['transactions_found'] == 0:
                 logger.warning(
                     f"No transactions found in {len(lines)} lines. "
@@ -149,6 +169,7 @@ class TransactionExtractor:
         
         # Only process transaction lines if we're in a valid category
         if not self.category_state.is_valid_state():
+            logger.debug(f"Skipping line (invalid category state): {line[:50]}...")
             return
         
         # Check if line is just a date (MM/DD or MM/DD/YYYY)
@@ -257,14 +278,17 @@ class TransactionExtractor:
                 logger.debug(f"No content after date in line: {line}")
                 return
             
-            # Extract all amounts from the line
-            amounts = self.AMOUNT_PATTERN.findall(remaining)
-            if not amounts:
+            # Extract all amount matches using finditer() to get complete match objects
+            # This gives us the full matched string AND its position
+            matches = list(self.AMOUNT_PATTERN.finditer(remaining))
+            if not matches:
                 logger.debug(f"No amount found in line: {line[:50]}...")
                 return
             
-            # Take the last amount as the transaction amount
-            amount_str = amounts[-1]
+            # Take the last amount match as the transaction amount
+            last_match = matches[-1]
+            amount_str = last_match.group(1)  # Get the captured group (the full amount)
+            amount_start = last_match.start()  # Get exact position where amount starts
             
             try:
                 amount = self._parse_amount(amount_str)
@@ -273,12 +297,28 @@ class TransactionExtractor:
                 return
             
             # Everything between date and amount is description
-            amount_pos = remaining.rfind(amount_str)
-            description = remaining[:amount_pos].strip()
+            # Use the exact position from the match object
+            description = remaining[:amount_start].strip()
             
-            if not description:
-                logger.debug(f"Empty description for transaction on {date_str}")
-                description = "[No description]"  # Provide fallback
+            # Skip transactions with no meaningful description (likely page totals/balances)
+            if not description or len(description) < 3:
+                logger.debug(f"Skipping: no meaningful description for date {date_str}")
+                return
+            
+            # Skip if description contains balance/total/summary keywords
+            # These are section headers or page totals, not real transactions
+            # NOTE: We do NOT reject based on amount size - business transactions can be millions/billions!
+            desc_lower = description.lower()
+            skip_keywords = ['total', 'balance', 'subtotal', 'page total', 'grand total', 
+                           'ending balance', 'beginning balance', 'current balance',
+                           'daily balance', 'running balance']
+            if any(keyword in desc_lower for keyword in skip_keywords):
+                logger.debug(f"Skipping: description '{description[:50]}' contains summary keyword")
+                return
+            
+            # REMOVED: Amount-based rejection - real transactions can be any size!
+            # Business accounts often have multi-million dollar transactions.
+            # We only filter by description keywords above.
             
             # Apply sign based on category
             signed_amount = apply_sign_to_amount(amount, self.category_state.get_state())
@@ -306,24 +346,61 @@ class TransactionExtractor:
         """
         Check if line is a continuation of the current transaction.
         Continuation lines don't start with dates and aren't category headers.
+        
+        Improvements:
+        - Stop at standalone amount lines (balance/total lines)
+        - Stop at footer/header keywords
+        - Stop at lines that look like new sections
+        - Require alphabetic content (not just numbers/symbols)
         """
-        # Not a date line
+        if not line or not line.strip():
+            return False
+        
+        # Not a date line (would be a new transaction)
         if self.DATE_PATTERN.match(line):
+            logger.debug(f"Not continuation: starts with date")
             return False
         
         # Not a category header
         if self.category_state.update_state(line):
+            logger.debug(f"Not continuation: category header")
             return False
         
-        # Has some text content
-        if not line.strip():
+        # Stop at standalone amounts (balance lines like "$202,624.19")
+        # These are running balances, not part of descriptions
+        if re.match(r'^\s*\$?\s*\d{1,3}(?:,\d{3})*\.\d{2}\s*$', line):
+            logger.debug(f"Not continuation: standalone amount line")
             return False
         
-        # Avoid lines that look like headers or summaries
+        # Stop at footer/header/summary keywords
+        # These indicate end of transaction section or page footer
+        stop_keywords = [
+            'total', 'subtotal', 'balance', 'account #', 'account number',
+            'page', 'continued', 'security', 'for information', 'for questions',
+            'service fees', 'interest earned', 'deposits', 'withdrawals',
+            'beginning balance', 'ending balance', 'daily balance',
+            'year-to-date', 'previous balance', 'new balance',
+            'please see', 'visit us', 'call us', 'contact us',
+            'business purposes', 'check your', 'account security'
+        ]
+        
         lower_line = line.lower()
-        if any(keyword in lower_line for keyword in ["total", "balance", "subtotal", "page", "continued"]):
+        if any(keyword in lower_line for keyword in stop_keywords):
+            logger.debug(f"Not continuation: contains stop keyword")
             return False
         
+        # Line must have some alphabetic content (not just numbers/symbols)
+        # This filters out lines like "----" or "***" or "12345"
+        if not re.search(r'[a-zA-Z]', line):
+            logger.debug(f"Not continuation: no alphabetic content")
+            return False
+        
+        # Must start with space or alphanumeric (not special chars at start)
+        if not re.match(r'^[\s\w]', line):
+            logger.debug(f"Not continuation: bad starting character")
+            return False
+        
+        logger.debug(f"Is continuation: '{line[:50]}...'")
         return True
     
     def _append_to_description(self, line: str):

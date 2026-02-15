@@ -137,21 +137,22 @@ def apply_sign_to_amount(amount: float, transaction_type: TransactionType) -> fl
 
 def format_amount_display(amount: float) -> str:
     """
-    Format amount for display with explicit sign.
+    Format amount for display WITHOUT +/- signs.
     
-    Positive amounts: +1600.00
-    Negative amounts: -250.00
+    Since transactions are already grouped under "Deposits" and "Withdrawals" 
+    headings in the PDF, we don't need redundant +/- signs.
+    
+    Examples:
+    - 1600.00 (shown under "Deposits" heading)
+    - 250.00 (shown under "Withdrawals" heading)
     
     Args:
         amount: Signed amount
         
     Returns:
-        Formatted string with explicit sign
+        Formatted string with absolute value (no sign)
     """
-    if amount >= 0:
-        return f"+{amount:.2f}"
-    else:
-        return f"{amount:.2f}"  # Negative sign already included
+    return f"{abs(amount):.2f}"
 
 
 def is_category_line(line: str) -> bool:

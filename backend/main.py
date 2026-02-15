@@ -145,17 +145,46 @@ class TransactionFilter:
         """
         Extract YYYY-MM from date string.
         
+        Supports multiple date formats:
+        - MM/DD/YYYY (01/15/2026)
+        - MM/DD/YY (01/15/25) - 2-digit year
+        - MM/DD (01/15) - assumes current year
+        - MM-DD-YYYY (01-15-2026)
+        - MM-DD-YY (01-15-25)
+        
         Args:
-            date_str: Date string (MM/DD/YYYY or MM/DD)
+            date_str: Date string in various formats
             
         Returns:
             YYYY-MM string or None if parsing fails
         """
         try:
-            parts = date_str.split('/')
+            # Try slash separator first
+            if '/' in date_str:
+                parts = date_str.split('/')
+            # Try hyphen separator
+            elif '-' in date_str and not date_str.startswith('20'):  # Not YYYY-MM-DD
+                parts = date_str.split('-')
+            # Try YYYY-MM-DD format
+            elif '-' in date_str:
+                # YYYY-MM-DD format
+                return date_str[:7]  # Return YYYY-MM
+            else:
+                return None
             
-            if len(parts) == 3:  # MM/DD/YYYY
+            if len(parts) == 3:  # MM/DD/YYYY or MM/DD/YY
                 month, day, year = parts
+                
+                # Check if year is 2-digit
+                if len(year) == 2:
+                    # Convert 2-digit year to 4-digit
+                    # Assume years 00-49 are 2000-2049, and 50-99 are 1950-1999
+                    year_int = int(year)
+                    if year_int <= 49:
+                        year = f"20{year}"
+                    else:
+                        year = f"19{year}"
+                
                 return f"{year}-{month.zfill(2)}"
             
             elif len(parts) == 2:  # MM/DD - assume current year
@@ -165,8 +194,8 @@ class TransactionFilter:
             
             return None
             
-        except (ValueError, IndexError):
-            logger.warning(f"Failed to parse date: {date_str}")
+        except (ValueError, IndexError) as e:
+            logger.warning(f"Failed to parse date '{date_str}': {e}")
             return None
 
 

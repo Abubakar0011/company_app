@@ -10,15 +10,16 @@ from pathlib import Path
 from datetime import datetime
 import tempfile
 
-# Setup logging with DEBUG level to see extraction details
-logging.basicConfig(
-    level=logging.DEBUG,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-)
-
 # Add backend to path
 backend_path = Path(__file__).parent.parent / 'backend'
 sys.path.insert(0, str(backend_path))
+
+# Import configuration
+from config import config
+from logging_config import setup_logging
+
+# Setup logging
+setup_logging(log_level=config.LOG_LEVEL, log_file="frontend.log")
 
 # Import backend modules
 from loaders.pdf_loader import load_pdf
@@ -195,6 +196,21 @@ def process_statements(uploaded_files, keywords_input, start_month, end_month):
     """Process multiple uploaded statements and generate report."""
     
     try:
+        # Step 0: Validate uploaded files using centralized config
+        for uploaded_file in uploaded_files:
+            file_size = len(uploaded_file.getvalue())
+            is_valid, error_message = config.validate_file(uploaded_file.name, file_size)
+            
+            if not is_valid:
+                st.error(f"❌ {uploaded_file.name}: {error_message}")
+                return
+            
+            # Log file info
+            file_size_mb = file_size / (1024 * 1024)
+            logging.info(f"Validated file: {uploaded_file.name} ({file_size_mb:.2f} MB)")
+        
+        st.success(f"✅ File validation passed: {len(uploaded_files)} valid PDF(s) (Max: {config.MAX_FILE_SIZE_MB} MB each)")
+        
         with st.spinner(f"Processing {len(uploaded_files)} PDF file(s)..."):
             # Parse keywords
             keywords = [k.strip() for k in keywords_input.strip().split('\n') if k.strip()]

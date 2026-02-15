@@ -332,6 +332,16 @@ class PDFReportWriter:
             return Table([['Date', 'Description', 'Amount'], ['No transactions', '', '']])
         
         try:
+            # Create paragraph style for descriptions (allows text wrapping)
+            desc_style = ParagraphStyle(
+                'Description',
+                parent=getSampleStyleSheet()['Normal'],
+                fontSize=10,
+                leading=12,
+                alignment=TA_LEFT,
+                wordWrap='CJK'  # Enable word wrapping
+            )
+            
             # Table data with context header and column header
             data = [
                 [month or '', bank_name or '', transaction_type or ''],  # Context header
@@ -340,24 +350,26 @@ class PDFReportWriter:
             
             for txn in transactions:
                 try:
+                    # Use Paragraph for description to enable wrapping - NO TRUNCATION!
+                    desc_paragraph = Paragraph(txn.description or '[No description]', desc_style)
                     data.append([
                         txn.date or '[No date]',
-                        self._truncate_description(txn.description or '[No description]', max_length=60),
+                        desc_paragraph,  # Complete description with wrapping
                         txn.amount_display or '0.00'
                     ])
                 except Exception as e:
                     logger.warning(f"Error formatting transaction {txn}: {e}")
                     continue
             
-            # Calculate total
-            total = sum(t.amount for t in transactions)
-            total_display = f"+{total:.2f}" if total >= 0 else f"{total:.2f}"
+            # Calculate total (use absolute value since signs already removed)
+            total = sum(abs(t.amount) for t in transactions)
+            total_display = f"{total:.2f}"
             
             # Add total row
             data.append(['', 'TOTAL', total_display])
             
-            # Create table
-            table = Table(data, colWidths=[1.2 * inch, 4.5 * inch, 1.2 * inch])
+            # Create table with wider description column for better wrapping
+            table = Table(data, colWidths=[1.2 * inch, 4.8 * inch, 1.0 * inch])
             
             # Style table
             table.setStyle(TableStyle([
@@ -387,6 +399,7 @@ class PDFReportWriter:
                 ('ALIGN', (0, 2), (0, -2), 'CENTER'),  # Date column
                 ('ALIGN', (1, 2), (1, -2), 'LEFT'),    # Description column
                 ('ALIGN', (2, 2), (2, -2), 'RIGHT'),   # Amount column
+                ('VALIGN', (0, 2), (-1, -2), 'TOP'),   # Vertical align top for wrapping descriptions
                 ('FONTNAME', (0, 2), (-1, -2), 'Helvetica'),
                 ('FONTSIZE', (0, 2), (-1, -2), 10),
                 ('TOPPADDING', (0, 2), (-1, -2), 6),

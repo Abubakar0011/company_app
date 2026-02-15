@@ -19,15 +19,27 @@ class ValidationError(Exception):
 class TransactionValidator:
     """Validates transaction data."""
     
-    def __init__(self, strict_mode: bool = False):
+    def __init__(
+        self, 
+        strict_mode: bool = False,
+        allow_zero_amounts: bool = False,
+        min_description_length: int = 2
+    ):
         """
-        Initialize validator.
+        Initialize validator with configurable settings.
         
         Args:
             strict_mode: If True, raise exceptions on invalid data.
                         If False, log warnings and skip invalid transactions.
+            allow_zero_amounts: If True, allow transactions with 0 amount.
+            min_description_length: Minimum characters required in description.
+        
+        Note: No maximum amount validation - business transactions can be millions/billions!
         """
         self.strict_mode = strict_mode
+        self.allow_zero_amounts = allow_zero_amounts
+        self.min_description_length = min_description_length
+        
         self.validation_stats = {
             "total_validated": 0,
             "valid": 0,
@@ -125,59 +137,67 @@ class TransactionValidator:
         Validate date string.
         
         Supports formats:
-        - MM/DD/YYYY
-        - MM/DD (assumes current year)
+        - MM/DD/YYYY (4-digit year)
+        - MM/DD/YY (2-digit year)
+        - MM/DD (no year, assumes current year)
+        - MM-DD-YYYY (with hyphens, 4-digit year)
+        - MM-DD-YY (with hyphens, 2-digit year)
+        - YYYY-MM-DD (ISO format)
         """
         if not date_str or not isinstance(date_str, str):
             return False
         
-        try:
-            # Try MM/DD/YYYY
-            if len(date_str.split('/')) == 3:
-                datetime.strptime(date_str, '%m/%d/%Y')
+        # List of supported date formats
+        date_formats = [
+            '%m/%d/%Y',    # MM/DD/YYYY
+            '%m/%d/%y',    # MM/DD/YY (NEW - supports 2-digit year)
+            '%m/%d',       # MM/DD
+            '%m-%d-%Y',    # MM-DD-YYYY
+            '%m-%d-%y',    # MM-DD-YY
+            '%Y-%m-%d'     # YYYY-MM-DD
+        ]
+        
+        for fmt in date_formats:
+            try:
+                datetime.strptime(date_str, fmt)
                 return True
-            
-            # Try MM/DD
-            if len(date_str.split('/')) == 2:
-                datetime.strptime(date_str, '%m/%d')
-                return True
-            
-            return False
-            
-        except ValueError:
-            return False
+            except ValueError:
+                continue
+        
+        return False
     
     def _validate_amount(self, amount: float) -> bool:
         """
-        Validate amount.
+        Validate amount with configurable settings.
         
         Must be:
         - A number
-        - Non-zero
-        - Reasonable range (not too large)
+        - Non-zero (unless allow_zero_amounts is True)
+        - Within reasonable range (configurable max_amount)
         """
         if not isinstance(amount, (int, float)):
             return False
         
-        # Check if zero
+        # Check if zero (configurable)
         if amount == 0:
-            logger.debug("Amount is zero")
-            return False
+            if not self.allow_zero_amounts:
+                logger.debug("Amount is zero (rejected - allow_zero_amounts=False)")
+                return False
+            else:
+                logger.debug("Amount is zero (accepted - allow_zero_amounts=True)")
         
-        # Check reasonable range (< $1 million per transaction)
-        if abs(amount) > 1_000_000:
-            logger.warning(f"Amount suspiciously large: {amount}")
-            # Don't fail, but log warning
+        # NO MAX AMOUNT CHECK - Business transactions can be millions or billions!
+        # We don't reject based on amount size, only based on description keywords in the extractor.
         
         return True
     
     def _validate_description(self, description: str) -> bool:
         """
-        Validate description.
+        Validate description with configurable minimum length.
         
         Must be:
         - Non-empty
-        - At least 2 characters
+        - At least min_description_length characters (configurable)
         - String type
         """
         if not isinstance(description, str):
@@ -186,7 +206,9 @@ class TransactionValidator:
         if not description.strip():
             return False
         
-        if len(description.strip()) < 2:
+        # Use configurable minimum length
+        if len(description.strip()) < self.min_description_length:
+            logger.debug(f"Description too short: '{description}' (min: {self.min_description_length})")
             return False
         
         return True
