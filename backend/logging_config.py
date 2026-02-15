@@ -7,7 +7,7 @@ import logging
 import sys
 from pathlib import Path
 from typing import Optional
-from backend.config import config
+from config import config
 
 
 def setup_logging(
