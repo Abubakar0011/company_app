@@ -40,9 +40,6 @@ htmlcov/
 .DS_Store
 Thumbs.db
 
-# UV Package Manager
-uv.lock
-.python-version
 
 # Frontend (Node.js)
 frontend/node_modules/
