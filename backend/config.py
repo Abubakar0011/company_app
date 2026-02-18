@@ -89,6 +89,30 @@ class Config:
         return True, None
     
     @classmethod
+    def validate_config(cls) -> tuple[bool, list[str]]:
+        """Validate configuration settings.
+        
+        Returns:
+            tuple: (is_valid, list_of_errors)
+        """
+        errors = []
+        
+        if cls.MAX_FILE_SIZE_MB <= 0:
+            errors.append(f"MAX_FILE_SIZE_MB must be positive, got: {cls.MAX_FILE_SIZE_MB}")
+        
+        if cls.MAX_TRANSACTION_AMOUNT <= 0:
+            errors.append(f"MAX_TRANSACTION_AMOUNT must be positive, got: {cls.MAX_TRANSACTION_AMOUNT}")
+        
+        if cls.MIN_DESCRIPTION_LENGTH < 1:
+            errors.append(f"MIN_DESCRIPTION_LENGTH must be >= 1, got: {cls.MIN_DESCRIPTION_LENGTH}")
+        
+        valid_log_levels = ['DEBUG', 'INFO', 'WARNING', 'ERROR', 'CRITICAL']
+        if cls.LOG_LEVEL.upper() not in valid_log_levels:
+            errors.append(f"Invalid LOG_LEVEL: {cls.LOG_LEVEL}. Must be one of {valid_log_levels}")
+        
+        return (len(errors) == 0, errors)
+    
+    @classmethod
     def to_dict(cls) -> dict:
         """Convert configuration to dictionary."""
         return {

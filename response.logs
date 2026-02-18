@@ -1,0 +1,869 @@
+Feb 16 14:19:37  2026-02-16 14:19:37 - root - INFO - Validated file: eStmt_2025-01-31 (1).pdf (0.31 MB)
+Feb 16 14:19:37  2026-02-16 14:19:37 - loaders.pdf_loader - INFO - Loading PDF: /tmp/tmpedc_tqvm.pdf (6 pages)
+Feb 16 14:19:37  2026-02-16 14:19:37 - loaders.pdf_loader - INFO - Extraction complete: 10974 characters from 6 pages (0 empty pages skipped)
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - INFO - Starting extraction from 297 lines
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - INFO - Created transaction: 01/02/25 | Online Banking transfer from CHK 2401 Confirmation... | +6000.00
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - INFO - Created transaction: 01/03/25 | ALTA AP          DES:BILLPMT    ID:VA00647  INDN:Z... | +51680.00
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - INFO - Created transaction: 01/03/25 | MOTION RECRUITME DES:PAYMENT    ID:148780_BHMRP  I... | +1800.00
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - INFO - Created transaction: 01/07/25 | Online transfer from CHK 5344 Confirmation# yrdk9y... | +4226.97
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - INFO - Created transaction: 01/07/25 | Online transfer from CHK 5344 Confirmation# tnwxvl... | +4215.52
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - INFO - Created transaction: 01/07/25 | Online transfer from CHK 5344 Confirmation# wnsuuy... | +150.00
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - INFO - Created transaction: 01/09/25 | Online transfer from CHK 5344 Confirmation# zlu9gt... | +3980.20
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - INFO - Created transaction: 01/10/25 | INTUIT 18130190  DES:BILL_PAY   ID:MANCOM, INC  IN... | +15088.00
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - INFO - Created transaction: 01/10/25 | MOTION RECRUITME DES:PAYMENT    ID:148780_BHMRP  I... | +3000.00
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - INFO - Created transaction: 01/14/25 | Online Banking transfer from CHK 9830 Confirmation... | +20000.00
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - INFO - Created transaction: 01/14/25 | Mobile transfer from CHK 3364 Confirmation# rblxia... | +5000.00
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - INFO - Created transaction: 01/14/25 | Mobile transfer from CHK 3364 Confirmation# mpvud0... | +4500.00
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - INFO - Created transaction: 01/15/25 | AMERICAN EXPRESS DES:LOAN       ID:11180823  INDN:... | +66700.00
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - INFO - Created transaction: 01/17/25 | MOTION RECRUITME DES:PAYMENT    ID:148780_BHMRP  I... | +2887.50
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - INFO - Created transaction: 01/17/25 | ALTA AP          DES:BILLPMT    ID:VA00647  INDN:Z... | +2280.00
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - INFO - Created transaction: 01/24/25 | MOTION RECRUITME DES:PAYMENT    ID:148780_BHMRP  I... | +3000.00
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - INFO - Created transaction: 01/24/25 | ALTA AP          DES:BILLPMT    ID:VA00647  INDN:Z... | +2520.00
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - INFO - Created transaction: 01/27/25 | Mobile transfer from CHK 3364 Confirmation# ql16zn... | +5596.00
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=WIRE TYPE:INTL OUT DATE:250102 TIME:0436 ET TRN:20... (missing amount)
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=WIRE TYPE:INTL OUT DATE:250102 TIME:0452 ET TRN:20... (missing amount)
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=WIRE TYPE:INTL OUT DATE:250102 TIME:0821 ET TRN:20... (missing amount)
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=WIRE TYPE:FX OUT DATE:250103 TIME:1411 ET TRN:2024... (missing amount)
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=APPLECARD GSBANK DES:PAYMENT    ID:4899233  INDN:F... (missing amount)
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/03/25, description=Online transfer to CHK 5171 Confirmation# hfafd3c0... (missing amount)
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/06/25, description=Zelle payment to praveen dabbara Conf# ce6qhor3c -... (missing amount)
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/06/25, description=WIRE TYPE:INTL OUT DATE:250106 TIME:1504 ET TRN:20... (missing amount)
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/13/25, description=WIRE TYPE:FX OUT DATE:250114 TIME:1519 ET TRN:2025... (missing amount)
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/13/25, description=AMERICAN EXPRESS DES:LOAN PMT   ID:11169225  INDN:... (missing amount)
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/15/25, description=CHASE CREDIT CRD DES:EPAY       ID:8102050605  IND... (missing amount)
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/21/25, description=Zelle payment to  FAHIM MIRZA Conf# hbi9w0mh0 -2,5... (missing amount)
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/21/25, description=Online Banking transfer to CHK 9830 Confirmation# ... (missing amount)
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/27/25, description=Online transfer to CHK 5171 Confirmation# fhlq6ri3... (missing amount)
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=Prfd Rwds for Bus-Intl Wire Fee Waiver of $45 -0.0... (missing amount)
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=Prfd Rwds for Bus-Intl Wire Fee Waiver of $45 -0.0... (missing amount)
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=Prfd Rwds for Bus-Intl Wire Fee Waiver of $45 -0.0... (missing amount)
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/06/25, description=Prfd Rwds for Bus-Intl Wire Fee Waiver of $45 -0.0... (missing amount)
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - INFO - Created transaction: 01/01/2026 | [No description]... | -55854.85
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - INFO - Created transaction: 01/09/2026 | [No description]... | -40818.84
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - INFO - Created transaction: 01/17/2026 | [No description]... | -87346.54
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - INFO - Created transaction: 01/02/2026 | [No description]... | -9676.15
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - INFO - Created transaction: 01/10/2026 | [No description]... | -58906.84
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - INFO - Created transaction: 01/21/2026 | [No description]... | -64846.54
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - INFO - Created transaction: 01/03/2026 | [No description]... | -38156.15
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - INFO - Created transaction: 01/13/2026 | [No description]... | -41196.50
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - INFO - Created transaction: 01/24/2026 | [No description]... | -70366.54
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - INFO - Created transaction: 01/06/2026 | [No description]... | -28246.15
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - INFO - Created transaction: 01/14/2026 | [No description]... | -70696.50
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - INFO - Created transaction: 01/27/2026 | [No description]... | -75122.54
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - INFO - Created transaction: 01/07/2026 | [No description]... | -36838.64
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - INFO - Created transaction: 01/15/2026 | [No description]... | -82179.04
+Feb 16 14:19:37  2026-02-16 14:19:37 - extractors.regex_extractor - INFO - Extraction complete: 32 transactions found, 0 multi-line merges, 4 category changes
+Feb 16 14:19:37  2026-02-16 14:19:37 - validators.financial_validator - INFO - Validation complete: 32 valid, 0 invalid out of 32 total
+Feb 16 14:19:37  2026-02-16 14:19:37 - main - INFO - Found 28 unmatched transactions
+Feb 16 14:19:37  2026-02-16 14:19:37 - main - INFO - Keyword 'motion': 4 transactions matched
+Feb 16 14:19:37  2026-02-16 14:19:37 - main - INFO - Keyword 'Unmatched': 28 transactions matched
+Feb 16 14:19:37  2026-02-16 14:19:37 - main - INFO - Date range filter (2026-01 to 2026-12): 0/4 transactions matched
+Feb 16 14:19:37  2026-02-16 14:19:37 - main - INFO - Date range filter (2026-01 to 2026-12): 14/28 transactions matched
+Feb 16 14:19:37  2026-02-16 14:19:37 - main - INFO - Grouped 14 transactions into 1 months
+Feb 16 14:19:37  2026-02-16 14:19:37 - main - INFO - Bank 'Unmatched': 1 months, 14 total transactions
+Feb 16 14:19:37  2026-02-16 14:19:37 - output.writer - INFO - Generating multi-bank PDF report: /app/output/report_20260216_141937.pdf
+Feb 16 14:19:37  2026-02-16 14:19:37 - output.writer - INFO - Report contains 1 banks, 14 total transactions
+Feb 16 14:19:37  2026-02-16 14:19:37 - output.writer - INFO - Building PDF document...
+Feb 16 14:19:37  2026-02-16 14:19:37 - output.writer - INFO - PDF report generated successfully: /app/output/report_20260216_141937.pdf
+Feb 16 14:19:46  2026-02-16 14:19:46 - root - INFO - Validated file: eStmt_2025-01-31 (1).pdf (0.31 MB)
+Feb 16 14:19:46  2026-02-16 14:19:46 - loaders.pdf_loader - INFO - Loading PDF: /tmp/tmp2fw0wfvb.pdf (6 pages)
+Feb 16 14:19:46  2026-02-16 14:19:46 - loaders.pdf_loader - INFO - Extraction complete: 10974 characters from 6 pages (0 empty pages skipped)
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - INFO - Starting extraction from 297 lines
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - INFO - Created transaction: 01/02/25 | Online Banking transfer from CHK 2401 Confirmation... | +6000.00
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - INFO - Created transaction: 01/03/25 | ALTA AP          DES:BILLPMT    ID:VA00647  INDN:Z... | +51680.00
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - INFO - Created transaction: 01/03/25 | MOTION RECRUITME DES:PAYMENT    ID:148780_BHMRP  I... | +1800.00
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - INFO - Created transaction: 01/07/25 | Online transfer from CHK 5344 Confirmation# yrdk9y... | +4226.97
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - INFO - Created transaction: 01/07/25 | Online transfer from CHK 5344 Confirmation# tnwxvl... | +4215.52
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - INFO - Created transaction: 01/07/25 | Online transfer from CHK 5344 Confirmation# wnsuuy... | +150.00
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - INFO - Created transaction: 01/09/25 | Online transfer from CHK 5344 Confirmation# zlu9gt... | +3980.20
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - INFO - Created transaction: 01/10/25 | INTUIT 18130190  DES:BILL_PAY   ID:MANCOM, INC  IN... | +15088.00
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - INFO - Created transaction: 01/10/25 | MOTION RECRUITME DES:PAYMENT    ID:148780_BHMRP  I... | +3000.00
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - INFO - Created transaction: 01/14/25 | Online Banking transfer from CHK 9830 Confirmation... | +20000.00
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - INFO - Created transaction: 01/14/25 | Mobile transfer from CHK 3364 Confirmation# rblxia... | +5000.00
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - INFO - Created transaction: 01/14/25 | Mobile transfer from CHK 3364 Confirmation# mpvud0... | +4500.00
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - INFO - Created transaction: 01/15/25 | AMERICAN EXPRESS DES:LOAN       ID:11180823  INDN:... | +66700.00
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - INFO - Created transaction: 01/17/25 | MOTION RECRUITME DES:PAYMENT    ID:148780_BHMRP  I... | +2887.50
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - INFO - Created transaction: 01/17/25 | ALTA AP          DES:BILLPMT    ID:VA00647  INDN:Z... | +2280.00
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - INFO - Created transaction: 01/24/25 | MOTION RECRUITME DES:PAYMENT    ID:148780_BHMRP  I... | +3000.00
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - INFO - Created transaction: 01/24/25 | ALTA AP          DES:BILLPMT    ID:VA00647  INDN:Z... | +2520.00
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - INFO - Created transaction: 01/27/25 | Mobile transfer from CHK 3364 Confirmation# ql16zn... | +5596.00
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=WIRE TYPE:INTL OUT DATE:250102 TIME:0436 ET TRN:20... (missing amount)
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=WIRE TYPE:INTL OUT DATE:250102 TIME:0452 ET TRN:20... (missing amount)
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=WIRE TYPE:INTL OUT DATE:250102 TIME:0821 ET TRN:20... (missing amount)
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=WIRE TYPE:FX OUT DATE:250103 TIME:1411 ET TRN:2024... (missing amount)
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=APPLECARD GSBANK DES:PAYMENT    ID:4899233  INDN:F... (missing amount)
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/03/25, description=Online transfer to CHK 5171 Confirmation# hfafd3c0... (missing amount)
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/06/25, description=Zelle payment to praveen dabbara Conf# ce6qhor3c -... (missing amount)
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/06/25, description=WIRE TYPE:INTL OUT DATE:250106 TIME:1504 ET TRN:20... (missing amount)
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/13/25, description=WIRE TYPE:FX OUT DATE:250114 TIME:1519 ET TRN:2025... (missing amount)
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/13/25, description=AMERICAN EXPRESS DES:LOAN PMT   ID:11169225  INDN:... (missing amount)
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/15/25, description=CHASE CREDIT CRD DES:EPAY       ID:8102050605  IND... (missing amount)
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/21/25, description=Zelle payment to  FAHIM MIRZA Conf# hbi9w0mh0 -2,5... (missing amount)
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/21/25, description=Online Banking transfer to CHK 9830 Confirmation# ... (missing amount)
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/27/25, description=Online transfer to CHK 5171 Confirmation# fhlq6ri3... (missing amount)
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=Prfd Rwds for Bus-Intl Wire Fee Waiver of $45 -0.0... (missing amount)
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=Prfd Rwds for Bus-Intl Wire Fee Waiver of $45 -0.0... (missing amount)
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=Prfd Rwds for Bus-Intl Wire Fee Waiver of $45 -0.0... (missing amount)
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/06/25, description=Prfd Rwds for Bus-Intl Wire Fee Waiver of $45 -0.0... (missing amount)
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - INFO - Created transaction: 01/01/2026 | [No description]... | -55854.85
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - INFO - Created transaction: 01/09/2026 | [No description]... | -40818.84
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - INFO - Created transaction: 01/17/2026 | [No description]... | -87346.54
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - INFO - Created transaction: 01/02/2026 | [No description]... | -9676.15
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - INFO - Created transaction: 01/10/2026 | [No description]... | -58906.84
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - INFO - Created transaction: 01/21/2026 | [No description]... | -64846.54
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - INFO - Created transaction: 01/03/2026 | [No description]... | -38156.15
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - INFO - Created transaction: 01/13/2026 | [No description]... | -41196.50
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - INFO - Created transaction: 01/24/2026 | [No description]... | -70366.54
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - INFO - Created transaction: 01/06/2026 | [No description]... | -28246.15
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - INFO - Created transaction: 01/14/2026 | [No description]... | -70696.50
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - INFO - Created transaction: 01/27/2026 | [No description]... | -75122.54
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - INFO - Created transaction: 01/07/2026 | [No description]... | -36838.64
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - INFO - Created transaction: 01/15/2026 | [No description]... | -82179.04
+Feb 16 14:19:46  2026-02-16 14:19:46 - extractors.regex_extractor - INFO - Extraction complete: 32 transactions found, 0 multi-line merges, 4 category changes
+Feb 16 14:19:46  2026-02-16 14:19:46 - validators.financial_validator - INFO - Validation complete: 32 valid, 0 invalid out of 32 total
+Feb 16 14:19:46  2026-02-16 14:19:46 - main - INFO - Found 28 unmatched transactions
+Feb 16 14:19:46  2026-02-16 14:19:46 - main - INFO - Keyword 'motion': 4 transactions matched
+Feb 16 14:19:46  2026-02-16 14:19:46 - main - INFO - Keyword 'Unmatched': 28 transactions matched
+Feb 16 14:19:46  2026-02-16 14:19:46 - main - INFO - Date range filter (2026-01 to 2026-12): 0/4 transactions matched
+Feb 16 14:19:46  2026-02-16 14:19:46 - main - INFO - Date range filter (2026-01 to 2026-12): 14/28 transactions matched
+Feb 16 14:19:46  2026-02-16 14:19:46 - main - INFO - Grouped 14 transactions into 1 months
+Feb 16 14:19:46  2026-02-16 14:19:46 - main - INFO - Bank 'Unmatched': 1 months, 14 total transactions
+Feb 16 14:19:46  2026-02-16 14:19:46 - output.writer - INFO - Generating multi-bank PDF report: /app/output/report_20260216_141946.pdf
+Feb 16 14:19:46  2026-02-16 14:19:46 - output.writer - INFO - Report contains 1 banks, 14 total transactions
+Feb 16 14:19:46  2026-02-16 14:19:46 - output.writer - INFO - Building PDF document...
+Feb 16 14:19:46  2026-02-16 14:19:46 - output.writer - INFO - PDF report generated successfully: /app/output/report_20260216_141946.pdf
+Feb 16 17:23:14  2026-02-16 17:23:14 - root - INFO - Validated file: 20250131-statements-1980-.pdf (0.10 MB)
+Feb 16 17:23:14  2026-02-16 17:23:14 - loaders.pdf_loader - INFO - Loading PDF: /tmp/tmps1n8x748.pdf (4 pages)
+Feb 16 17:23:14  2026-02-16 17:23:14 - loaders.pdf_loader - INFO - Extraction complete: 8523 characters from 4 pages (0 empty pages skipped)
+Feb 16 17:23:14  2026-02-16 17:23:14 - extractors.regex_extractor - INFO - Starting extraction from 294 lines
+Feb 16 17:23:14  2026-02-16 17:23:14 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/10, description=Orig CO Name:Insource Inc           Orig ID:123302... (missing amount)
+Feb 16 17:23:14  2026-02-16 17:23:14 - extractors.regex_extractor - INFO - Created transaction: 01/21/2026 | Chips Credit Via: Bank of America, N.A./0959 B/O: ... | -1600.00
+Feb 16 17:23:14  2026-02-16 17:23:14 - extractors.regex_extractor - INFO - Created transaction: 01/24/2026 | Orig CO Name:Insource Inc           Orig ID:123302... | -6365.00
+Feb 16 17:23:14  2026-02-16 17:23:14 - extractors.regex_extractor - INFO - Created transaction: 01/27/2026 | Chips Credit Via: Bank of America, N.A./0959 B/O: ... | -14000.00
+Feb 16 17:23:14  2026-02-16 17:23:14 - extractors.regex_extractor - INFO - Created transaction: 01/27/2026 | Online Transfer From Chk ...8837 Transaction#: 235... | -15000.00
+Feb 16 17:23:14  2026-02-16 17:23:14 - extractors.regex_extractor - INFO - Created transaction: 01/27/2026 | Orig CO Name:'Deel, Ivsaudxow       Orig ID:885161... | -720.00
+Feb 16 17:23:14  2026-02-16 17:23:14 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/03, description=01/03 Online Domestic Wire Transfer Via: Bk Amer N... (missing amount)
+Feb 16 17:23:14  2026-02-16 17:23:14 - extractors.regex_extractor - INFO - Created transaction: 01/27/2026 | 01/27 Online Domestic Wire Transfer Via: Bk Amer N... | -45174.00
+Feb 16 17:23:14  2026-02-16 17:23:14 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/03, description=$17,085.32... (missing amount)
+Feb 16 17:23:14  2026-02-16 17:23:14 - extractors.regex_extractor - INFO - Created transaction: 01/10/2026 | [No description]... | -28485.32
+Feb 16 17:23:14  2026-02-16 17:23:14 - extractors.regex_extractor - INFO - Created transaction: 01/21/2026 | [No description]... | -30085.32
+Feb 16 17:23:14  2026-02-16 17:23:14 - extractors.regex_extractor - INFO - Created transaction: 01/24/2026 | [No description]... | -36450.32
+Feb 16 17:23:14  2026-02-16 17:23:14 - extractors.regex_extractor - INFO - Created transaction: 01/27/2026 | [No description]... | -20996.32
+Feb 16 17:23:14  2026-02-16 17:23:14 - extractors.regex_extractor - INFO - Extraction complete: 10 transactions found, 0 multi-line merges, 6 category changes
+Feb 16 17:23:14  2026-02-16 17:23:14 - validators.financial_validator - INFO - Validation complete: 10 valid, 0 invalid out of 10 total
+Feb 16 17:23:14  2026-02-16 17:23:14 - main - INFO - Found 9 unmatched transactions
+Feb 16 17:23:14  2026-02-16 17:23:14 - main - INFO - Keyword 'insource': 1 transactions matched
+Feb 16 17:23:14  2026-02-16 17:23:14 - main - INFO - Keyword 'Unmatched': 9 transactions matched
+Feb 16 17:23:14  2026-02-16 17:23:14 - main - INFO - Date range filter (2026-01 to 2026-12): 1/1 transactions matched
+Feb 16 17:23:14  2026-02-16 17:23:14 - main - INFO - Date range filter (2026-01 to 2026-12): 9/9 transactions matched
+Feb 16 17:23:14  2026-02-16 17:23:14 - main - INFO - Grouped 1 transactions into 1 months
+Feb 16 17:23:14  2026-02-16 17:23:14 - main - INFO - Bank 'insource': 1 months, 1 total transactions
+Feb 16 17:23:14  2026-02-16 17:23:14 - main - INFO - Grouped 9 transactions into 1 months
+Feb 16 17:23:14  2026-02-16 17:23:14 - main - INFO - Bank 'Unmatched': 1 months, 9 total transactions
+Feb 16 17:23:14  2026-02-16 17:23:14 - output.writer - INFO - Generating multi-bank PDF report: /app/output/report_20260216_172314.pdf
+Feb 16 17:23:14  2026-02-16 17:23:14 - output.writer - INFO - Report contains 2 banks, 10 total transactions
+Feb 16 17:23:14  2026-02-16 17:23:14 - output.writer - INFO - Building PDF document...
+Feb 16 17:23:14  2026-02-16 17:23:14 - output.writer - INFO - PDF report generated successfully: /app/output/report_20260216_172314.pdf
+Feb 16 17:25:47  2026-02-16 17:25:47 - root - INFO - Validated file: us_style_ledger_grouped_statement.pdf (0.01 MB)
+Feb 16 17:25:47  2026-02-16 17:25:47 - loaders.pdf_loader - INFO - Loading PDF: /tmp/tmpb74navjm.pdf (7 pages)
+Feb 16 17:25:47  2026-02-16 17:25:47 - loaders.pdf_loader - INFO - Extraction complete: 11470 characters from 7 pages (0 empty pages skipped)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Starting extraction from 395 lines
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/01/25, description=MOTION RECRUITME DES:PAYMENT ID:805040_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/06/25, description=MOTION RECRUITME DES:PAYMENT ID:420920_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/12/25, description=MOTION RECRUITME DES:PAYMENT ID:442764_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/17/25, description=MOTION RECRUITME DES:PAYMENT ID:360001_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/23/25, description=MOTION RECRUITME DES:PAYMENT ID:507513_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/27/25, description=MOTION RECRUITME DES:PAYMENT ID:996164_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 01/30/25 | Chips Credit Via: U.S. Bank, N.A. B/O: John Smith ... | +4955.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 02/02/25 | Chips Credit Via: Citibank, N.A. B/O: Ali Khan 3/U... | +4918.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 02/06/25 | Chips Credit Via: U.S. Bank, N.A. B/O: John Smith ... | +1253.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 02/11/25 | Chips Credit Via: U.S. Bank, N.A. B/O: Ali Khan 3/... | +5683.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 02/14/25 | Chips Credit Via: Citibank, N.A. B/O: John Smith 3... | +1328.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 02/19/25 | Chips Credit Via: Capital One, N.A. B/O: John Smit... | +3657.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 02/22/25 | Chips Credit Via: U.S. Bank, N.A. B/O: Sara Ahmed ... | +1587.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 02/27/25 | Chips Credit Via: Citibank, N.A. B/O: Fahim Mirza ... | +2827.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 03/03/25 | Chips Credit Via: U.S. Bank, N.A. B/O: Ali Khan 3/... | +4235.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 03/06/25 | Chips Credit Via: Citibank, N.A. B/O: Sara Ahmed 3... | +3628.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 03/09/25 | Chips Credit Via: U.S. Bank, N.A. B/O: Sara Ahmed ... | +5669.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 03/13/25 | Chips Credit Via: Citibank, N.A. B/O: Ali Khan 3/U... | +5922.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=03/16/25, description=MOTION RECRUITME DES:PAYMENT ID:835129_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=03/22/25, description=MOTION RECRUITME DES:PAYMENT ID:458969_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=03/28/25, description=MOTION RECRUITME DES:PAYMENT ID:956943_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=04/01/25, description=MOTION RECRUITME DES:PAYMENT ID:645759_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=04/06/25, description=MOTION RECRUITME DES:PAYMENT ID:834500_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=04/10/25, description=MOTION RECRUITME DES:PAYMENT ID:609209_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 04/14/25 | Chips Credit Via: Citibank, N.A. B/O: Sara Ahmed 3... | +1318.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 04/19/25 | Chips Credit Via: Citibank, N.A. B/O: Sara Ahmed 3... | +5355.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 04/23/25 | Chips Credit Via: U.S. Bank, N.A. B/O: Fahim Mirza... | +3241.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 04/28/25 | Chips Credit Via: Citibank, N.A. B/O: Ali Khan 3/U... | +4991.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 05/03/25 | Chips Credit Via: Capital One, N.A. B/O: Ali Khan ... | +1287.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 05/07/25 | Chips Credit Via: U.S. Bank, N.A. B/O: Sara Ahmed ... | +2038.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 05/11/25 | Chips Credit Via: Capital One, N.A. B/O: Sara Ahme... | +4213.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 05/14/25 | Chips Credit Via: Citibank, N.A. B/O: Fahim Mirza ... | +5190.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 05/19/25 | Chips Credit Via: Citibank, N.A. B/O: Fahim Mirza ... | +5168.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 05/24/25 | Chips Credit Via: U.S. Bank, N.A. B/O: Fahim Mirza... | +1891.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 05/27/25 | Chips Credit Via: Capital One, N.A. B/O: John Smit... | +2104.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 05/31/25 | Chips Credit Via: U.S. Bank, N.A. B/O: Sara Ahmed ... | +4334.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=06/03/25, description=MOTION RECRUITME DES:PAYMENT ID:964399_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=06/07/25, description=MOTION RECRUITME DES:PAYMENT ID:781782_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=06/12/25, description=MOTION RECRUITME DES:PAYMENT ID:404633_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=06/17/25, description=MOTION RECRUITME DES:PAYMENT ID:844981_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=06/22/25, description=MOTION RECRUITME DES:PAYMENT ID:835279_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=06/28/25, description=MOTION RECRUITME DES:PAYMENT ID:564876_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=07/04/25, description=MOTION RECRUITME DES:PAYMENT ID:895307_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=07/09/25, description=MOTION RECRUITME DES:PAYMENT ID:773151_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=07/14/25, description=MOTION RECRUITME DES:PAYMENT ID:977871_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=07/20/25, description=MOTION RECRUITME DES:PAYMENT ID:546915_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=07/24/25, description=MOTION RECRUITME DES:PAYMENT ID:394378_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=07/29/25, description=MOTION RECRUITME DES:PAYMENT ID:918796_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=08/02/25, description=MOTION RECRUITME DES:PAYMENT ID:915842_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=08/07/25, description=MOTION RECRUITME DES:PAYMENT ID:770899_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=08/13/25, description=MOTION RECRUITME DES:PAYMENT ID:513450_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=08/18/25, description=MOTION RECRUITME DES:PAYMENT ID:219151_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=08/23/25, description=MOTION RECRUITME DES:PAYMENT ID:100210_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=08/26/25, description=MOTION RECRUITME DES:PAYMENT ID:536918_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 08/30/25 | Chips Credit Via: U.S. Bank, N.A. B/O: Sara Ahmed ... | +931.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 09/05/25 | Chips Credit Via: U.S. Bank, N.A. B/O: Sara Ahmed ... | +5229.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 09/08/25 | Chips Credit Via: Citibank, N.A. B/O: John Smith 3... | +2218.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 09/11/25 | Chips Credit Via: Capital One, N.A. B/O: John Smit... | +3774.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 09/15/25 | Chips Credit Via: Capital One, N.A. B/O: Fahim Mir... | +4741.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 09/19/25 | Chips Credit Via: Citibank, N.A. B/O: Sara Ahmed 3... | +3867.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=09/24/25, description=MOTION RECRUITME DES:PAYMENT ID:567523_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=09/28/25, description=MOTION RECRUITME DES:PAYMENT ID:202882_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=10/03/25, description=MOTION RECRUITME DES:PAYMENT ID:696381_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=10/09/25, description=MOTION RECRUITME DES:PAYMENT ID:274945_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=10/12/25, description=MOTION RECRUITME DES:PAYMENT ID:976438_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=10/17/25, description=MOTION RECRUITME DES:PAYMENT ID:814829_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 10/20/25 | Chips Credit Via: U.S. Bank, N.A. B/O: John Smith ... | +4363.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 10/23/25 | Chips Credit Via: Capital One, N.A. B/O: Sara Ahme... | +1281.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 10/28/25 | Chips Credit Via: Capital One, N.A. B/O: John Smit... | +988.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 11/02/25 | Chips Credit Via: Citibank, N.A. B/O: Sara Ahmed 3... | +2851.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 11/08/25 | Chips Credit Via: Citibank, N.A. B/O: John Smith 3... | +3873.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 11/11/25 | Chips Credit Via: U.S. Bank, N.A. B/O: Sara Ahmed ... | +1718.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=11/16/25, description=MOTION RECRUITME DES:PAYMENT ID:165255_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=11/20/25, description=MOTION RECRUITME DES:PAYMENT ID:940273_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=11/25/25, description=MOTION RECRUITME DES:PAYMENT ID:214826_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=11/30/25, description=MOTION RECRUITME DES:PAYMENT ID:250843_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=12/05/25, description=MOTION RECRUITME DES:PAYMENT ID:143121_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - WARNING - Incomplete transaction: date=12/10/25, description=MOTION RECRUITME DES:PAYMENT ID:503623_BHMRP INDN:... (missing amount)
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 12/14/25 | Chips Credit Via: U.S. Bank, N.A. B/O: Ali Khan 3/... | +4305.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 12/17/25 | Chips Credit Via: Capital One, N.A. B/O: John Smit... | +1299.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 12/21/25 | Chips Credit Via: U.S. Bank, N.A. B/O: Fahim Mirza... | +4237.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 12/26/25 | Chips Credit Via: Capital One, N.A. B/O: John Smit... | +2151.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Created transaction: 12/30/25 | Chips Credit Via: U.S. Bank, N.A. B/O: Sara Ahmed ... | +1805.00
+Feb 16 17:25:47  2026-02-16 17:25:47 - extractors.regex_extractor - INFO - Extraction complete: 41 transactions found, 0 multi-line merges, 14 category changes
+Feb 16 17:25:47  2026-02-16 17:25:47 - validators.financial_validator - INFO - Validation complete: 41 valid, 0 invalid out of 41 total
+Feb 16 17:25:47  2026-02-16 17:25:47 - main - INFO - Keyword 'U.S. Bank': 17 transactions matched
+Feb 16 17:25:47  2026-02-16 17:25:47 - main - INFO - Keyword 'Citibank': 14 transactions matched
+Feb 16 17:25:47  2026-02-16 17:25:47 - main - INFO - Keyword 'Capital One': 10 transactions matched
+Feb 16 17:25:47  2026-02-16 17:25:47 - main - INFO - Date range filter (2025-01 to 2025-12): 17/17 transactions matched
+Feb 16 17:25:47  2026-02-16 17:25:47 - main - INFO - Date range filter (2025-01 to 2025-12): 14/14 transactions matched
+Feb 16 17:25:47  2026-02-16 17:25:47 - main - INFO - Date range filter (2025-01 to 2025-12): 10/10 transactions matched
+Feb 16 17:25:47  2026-02-16 17:25:47 - main - INFO - Grouped 17 transactions into 10 months
+Feb 16 17:25:47  2026-02-16 17:25:47 - main - INFO - Bank 'U.S. Bank': 10 months, 17 total transactions
+Feb 16 17:25:47  2026-02-16 17:25:47 - main - INFO - Grouped 14 transactions into 6 months
+Feb 16 17:25:47  2026-02-16 17:25:47 - main - INFO - Bank 'Citibank': 6 months, 14 total transactions
+Feb 16 17:25:47  2026-02-16 17:25:47 - main - INFO - Grouped 10 transactions into 5 months
+Feb 16 17:25:47  2026-02-16 17:25:47 - main - INFO - Bank 'Capital One': 5 months, 10 total transactions
+Feb 16 17:25:47  2026-02-16 17:25:47 - output.writer - INFO - Generating multi-bank PDF report: /app/output/report_20260216_172547.pdf
+Feb 16 17:25:47  2026-02-16 17:25:47 - output.writer - INFO - Report contains 3 banks, 41 total transactions
+Feb 16 17:25:47  2026-02-16 17:25:47 - output.writer - INFO - Building PDF document...
+Feb 16 17:25:47  2026-02-16 17:25:47 - output.writer - INFO - PDF report generated successfully: /app/output/report_20260216_172547.pdf
+Feb 16 17:27:09  2026-02-16 17:27:09 - root - INFO - Validated file: eStmt_2025-01-31 (1).pdf (0.31 MB)
+Feb 16 17:27:09  2026-02-16 17:27:09 - loaders.pdf_loader - INFO - Loading PDF: /tmp/tmp11ln26d7.pdf (6 pages)
+Feb 16 17:27:09  2026-02-16 17:27:09 - loaders.pdf_loader - INFO - Extraction complete: 10974 characters from 6 pages (0 empty pages skipped)
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - INFO - Starting extraction from 297 lines
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - INFO - Created transaction: 01/02/25 | Online Banking transfer from CHK 2401 Confirmation... | +6000.00
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - INFO - Created transaction: 01/03/25 | ALTA AP          DES:BILLPMT    ID:VA00647  INDN:Z... | +51680.00
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - INFO - Created transaction: 01/03/25 | MOTION RECRUITME DES:PAYMENT    ID:148780_BHMRP  I... | +1800.00
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - INFO - Created transaction: 01/07/25 | Online transfer from CHK 5344 Confirmation# yrdk9y... | +4226.97
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - INFO - Created transaction: 01/07/25 | Online transfer from CHK 5344 Confirmation# tnwxvl... | +4215.52
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - INFO - Created transaction: 01/07/25 | Online transfer from CHK 5344 Confirmation# wnsuuy... | +150.00
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - INFO - Created transaction: 01/09/25 | Online transfer from CHK 5344 Confirmation# zlu9gt... | +3980.20
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - INFO - Created transaction: 01/10/25 | INTUIT 18130190  DES:BILL_PAY   ID:MANCOM, INC  IN... | +15088.00
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - INFO - Created transaction: 01/10/25 | MOTION RECRUITME DES:PAYMENT    ID:148780_BHMRP  I... | +3000.00
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - INFO - Created transaction: 01/14/25 | Online Banking transfer from CHK 9830 Confirmation... | +20000.00
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - INFO - Created transaction: 01/14/25 | Mobile transfer from CHK 3364 Confirmation# rblxia... | +5000.00
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - INFO - Created transaction: 01/14/25 | Mobile transfer from CHK 3364 Confirmation# mpvud0... | +4500.00
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - INFO - Created transaction: 01/15/25 | AMERICAN EXPRESS DES:LOAN       ID:11180823  INDN:... | +66700.00
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - INFO - Created transaction: 01/17/25 | MOTION RECRUITME DES:PAYMENT    ID:148780_BHMRP  I... | +2887.50
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - INFO - Created transaction: 01/17/25 | ALTA AP          DES:BILLPMT    ID:VA00647  INDN:Z... | +2280.00
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - INFO - Created transaction: 01/24/25 | MOTION RECRUITME DES:PAYMENT    ID:148780_BHMRP  I... | +3000.00
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - INFO - Created transaction: 01/24/25 | ALTA AP          DES:BILLPMT    ID:VA00647  INDN:Z... | +2520.00
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - INFO - Created transaction: 01/27/25 | Mobile transfer from CHK 3364 Confirmation# ql16zn... | +5596.00
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=WIRE TYPE:INTL OUT DATE:250102 TIME:0436 ET TRN:20... (missing amount)
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=WIRE TYPE:INTL OUT DATE:250102 TIME:0452 ET TRN:20... (missing amount)
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=WIRE TYPE:INTL OUT DATE:250102 TIME:0821 ET TRN:20... (missing amount)
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=WIRE TYPE:FX OUT DATE:250103 TIME:1411 ET TRN:2024... (missing amount)
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=APPLECARD GSBANK DES:PAYMENT    ID:4899233  INDN:F... (missing amount)
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/03/25, description=Online transfer to CHK 5171 Confirmation# hfafd3c0... (missing amount)
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/06/25, description=Zelle payment to praveen dabbara Conf# ce6qhor3c -... (missing amount)
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/06/25, description=WIRE TYPE:INTL OUT DATE:250106 TIME:1504 ET TRN:20... (missing amount)
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/13/25, description=WIRE TYPE:FX OUT DATE:250114 TIME:1519 ET TRN:2025... (missing amount)
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/13/25, description=AMERICAN EXPRESS DES:LOAN PMT   ID:11169225  INDN:... (missing amount)
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/15/25, description=CHASE CREDIT CRD DES:EPAY       ID:8102050605  IND... (missing amount)
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/21/25, description=Zelle payment to  FAHIM MIRZA Conf# hbi9w0mh0 -2,5... (missing amount)
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/21/25, description=Online Banking transfer to CHK 9830 Confirmation# ... (missing amount)
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/27/25, description=Online transfer to CHK 5171 Confirmation# fhlq6ri3... (missing amount)
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=Prfd Rwds for Bus-Intl Wire Fee Waiver of $45 -0.0... (missing amount)
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=Prfd Rwds for Bus-Intl Wire Fee Waiver of $45 -0.0... (missing amount)
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=Prfd Rwds for Bus-Intl Wire Fee Waiver of $45 -0.0... (missing amount)
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/06/25, description=Prfd Rwds for Bus-Intl Wire Fee Waiver of $45 -0.0... (missing amount)
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - INFO - Created transaction: 01/01/2026 | [No description]... | -55854.85
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - INFO - Created transaction: 01/09/2026 | [No description]... | -40818.84
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - INFO - Created transaction: 01/17/2026 | [No description]... | -87346.54
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - INFO - Created transaction: 01/02/2026 | [No description]... | -9676.15
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - INFO - Created transaction: 01/10/2026 | [No description]... | -58906.84
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - INFO - Created transaction: 01/21/2026 | [No description]... | -64846.54
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - INFO - Created transaction: 01/03/2026 | [No description]... | -38156.15
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - INFO - Created transaction: 01/13/2026 | [No description]... | -41196.50
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - INFO - Created transaction: 01/24/2026 | [No description]... | -70366.54
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - INFO - Created transaction: 01/06/2026 | [No description]... | -28246.15
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - INFO - Created transaction: 01/14/2026 | [No description]... | -70696.50
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - INFO - Created transaction: 01/27/2026 | [No description]... | -75122.54
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - INFO - Created transaction: 01/07/2026 | [No description]... | -36838.64
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - INFO - Created transaction: 01/15/2026 | [No description]... | -82179.04
+Feb 16 17:27:09  2026-02-16 17:27:09 - extractors.regex_extractor - INFO - Extraction complete: 32 transactions found, 0 multi-line merges, 4 category changes
+Feb 16 17:27:09  2026-02-16 17:27:09 - validators.financial_validator - INFO - Validation complete: 32 valid, 0 invalid out of 32 total
+Feb 16 17:27:09  2026-02-16 17:27:09 - main - INFO - Found 28 unmatched transactions
+Feb 16 17:27:09  2026-02-16 17:27:09 - main - INFO - Keyword 'motion': 4 transactions matched
+Feb 16 17:27:09  2026-02-16 17:27:09 - main - INFO - Keyword 'Unmatched': 28 transactions matched
+Feb 16 17:27:09  2026-02-16 17:27:09 - main - INFO - Date range filter (2026-01 to 2026-12): 0/4 transactions matched
+Feb 16 17:27:09  2026-02-16 17:27:09 - main - INFO - Date range filter (2026-01 to 2026-12): 14/28 transactions matched
+Feb 16 17:27:09  2026-02-16 17:27:09 - main - INFO - Grouped 14 transactions into 1 months
+Feb 16 17:27:09  2026-02-16 17:27:09 - main - INFO - Bank 'Unmatched': 1 months, 14 total transactions
+Feb 16 17:27:09  2026-02-16 17:27:09 - output.writer - INFO - Generating multi-bank PDF report: /app/output/report_20260216_172709.pdf
+Feb 16 17:27:09  2026-02-16 17:27:09 - output.writer - INFO - Report contains 1 banks, 14 total transactions
+Feb 16 17:27:09  2026-02-16 17:27:09 - output.writer - INFO - Building PDF document...
+Feb 16 17:27:09  2026-02-16 17:27:09 - output.writer - INFO - PDF report generated successfully: /app/output/report_20260216_172709.pdf
+Feb 17 14:21:05  2026-02-17 14:21:05 - root - INFO - Validated file: eStmt_2025-01-31 (1).pdf (0.31 MB)
+Feb 17 14:21:05  2026-02-17 14:21:05 - loaders.pdf_loader - INFO - Loading PDF: /tmp/tmp8xgpkct6.pdf (6 pages)
+Feb 17 14:21:05  2026-02-17 14:21:05 - loaders.pdf_loader - INFO - Extraction complete: 10974 characters from 6 pages (0 empty pages skipped)
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - INFO - Starting extraction from 297 lines
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - INFO - Created transaction: 01/02/25 | Online Banking transfer from CHK 2401 Confirmation... | +6000.00
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - INFO - Created transaction: 01/03/25 | ALTA AP          DES:BILLPMT    ID:VA00647  INDN:Z... | +51680.00
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - INFO - Created transaction: 01/03/25 | MOTION RECRUITME DES:PAYMENT    ID:148780_BHMRP  I... | +1800.00
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - INFO - Created transaction: 01/07/25 | Online transfer from CHK 5344 Confirmation# yrdk9y... | +4226.97
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - INFO - Created transaction: 01/07/25 | Online transfer from CHK 5344 Confirmation# tnwxvl... | +4215.52
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - INFO - Created transaction: 01/07/25 | Online transfer from CHK 5344 Confirmation# wnsuuy... | +150.00
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - INFO - Created transaction: 01/09/25 | Online transfer from CHK 5344 Confirmation# zlu9gt... | +3980.20
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - INFO - Created transaction: 01/10/25 | INTUIT 18130190  DES:BILL_PAY   ID:MANCOM, INC  IN... | +15088.00
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - INFO - Created transaction: 01/10/25 | MOTION RECRUITME DES:PAYMENT    ID:148780_BHMRP  I... | +3000.00
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - INFO - Created transaction: 01/14/25 | Online Banking transfer from CHK 9830 Confirmation... | +20000.00
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - INFO - Created transaction: 01/14/25 | Mobile transfer from CHK 3364 Confirmation# rblxia... | +5000.00
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - INFO - Created transaction: 01/14/25 | Mobile transfer from CHK 3364 Confirmation# mpvud0... | +4500.00
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - INFO - Created transaction: 01/15/25 | AMERICAN EXPRESS DES:LOAN       ID:11180823  INDN:... | +66700.00
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - INFO - Created transaction: 01/17/25 | MOTION RECRUITME DES:PAYMENT    ID:148780_BHMRP  I... | +2887.50
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - INFO - Created transaction: 01/17/25 | ALTA AP          DES:BILLPMT    ID:VA00647  INDN:Z... | +2280.00
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - INFO - Created transaction: 01/24/25 | MOTION RECRUITME DES:PAYMENT    ID:148780_BHMRP  I... | +3000.00
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - INFO - Created transaction: 01/24/25 | ALTA AP          DES:BILLPMT    ID:VA00647  INDN:Z... | +2520.00
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - INFO - Created transaction: 01/27/25 | Mobile transfer from CHK 3364 Confirmation# ql16zn... | +5596.00
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=WIRE TYPE:INTL OUT DATE:250102 TIME:0436 ET TRN:20... (missing amount)
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=WIRE TYPE:INTL OUT DATE:250102 TIME:0452 ET TRN:20... (missing amount)
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=WIRE TYPE:INTL OUT DATE:250102 TIME:0821 ET TRN:20... (missing amount)
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=WIRE TYPE:FX OUT DATE:250103 TIME:1411 ET TRN:2024... (missing amount)
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=APPLECARD GSBANK DES:PAYMENT    ID:4899233  INDN:F... (missing amount)
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/03/25, description=Online transfer to CHK 5171 Confirmation# hfafd3c0... (missing amount)
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/06/25, description=Zelle payment to praveen dabbara Conf# ce6qhor3c -... (missing amount)
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/06/25, description=WIRE TYPE:INTL OUT DATE:250106 TIME:1504 ET TRN:20... (missing amount)
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/13/25, description=WIRE TYPE:FX OUT DATE:250114 TIME:1519 ET TRN:2025... (missing amount)
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/13/25, description=AMERICAN EXPRESS DES:LOAN PMT   ID:11169225  INDN:... (missing amount)
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/15/25, description=CHASE CREDIT CRD DES:EPAY       ID:8102050605  IND... (missing amount)
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/21/25, description=Zelle payment to  FAHIM MIRZA Conf# hbi9w0mh0 -2,5... (missing amount)
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/21/25, description=Online Banking transfer to CHK 9830 Confirmation# ... (missing amount)
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/27/25, description=Online transfer to CHK 5171 Confirmation# fhlq6ri3... (missing amount)
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=Prfd Rwds for Bus-Intl Wire Fee Waiver of $45 -0.0... (missing amount)
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=Prfd Rwds for Bus-Intl Wire Fee Waiver of $45 -0.0... (missing amount)
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=Prfd Rwds for Bus-Intl Wire Fee Waiver of $45 -0.0... (missing amount)
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/06/25, description=Prfd Rwds for Bus-Intl Wire Fee Waiver of $45 -0.0... (missing amount)
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - INFO - Created transaction: 01/01/2026 | [No description]... | -55854.85
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - INFO - Created transaction: 01/09/2026 | [No description]... | -40818.84
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - INFO - Created transaction: 01/17/2026 | [No description]... | -87346.54
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - INFO - Created transaction: 01/02/2026 | [No description]... | -9676.15
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - INFO - Created transaction: 01/10/2026 | [No description]... | -58906.84
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - INFO - Created transaction: 01/21/2026 | [No description]... | -64846.54
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - INFO - Created transaction: 01/03/2026 | [No description]... | -38156.15
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - INFO - Created transaction: 01/13/2026 | [No description]... | -41196.50
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - INFO - Created transaction: 01/24/2026 | [No description]... | -70366.54
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - INFO - Created transaction: 01/06/2026 | [No description]... | -28246.15
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - INFO - Created transaction: 01/14/2026 | [No description]... | -70696.50
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - INFO - Created transaction: 01/27/2026 | [No description]... | -75122.54
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - INFO - Created transaction: 01/07/2026 | [No description]... | -36838.64
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - INFO - Created transaction: 01/15/2026 | [No description]... | -82179.04
+Feb 17 14:21:05  2026-02-17 14:21:05 - extractors.regex_extractor - INFO - Extraction complete: 32 transactions found, 0 multi-line merges, 4 category changes
+Feb 17 14:21:05  2026-02-17 14:21:05 - validators.financial_validator - INFO - Validation complete: 32 valid, 0 invalid out of 32 total
+Feb 17 14:21:05  2026-02-17 14:21:05 - main - INFO - Found 28 unmatched transactions
+Feb 17 14:21:05  2026-02-17 14:21:05 - main - INFO - Keyword 'motion': 4 transactions matched
+Feb 17 14:21:05  2026-02-17 14:21:05 - main - INFO - Keyword 'Unmatched': 28 transactions matched
+Feb 17 14:21:05  2026-02-17 14:21:05 - main - INFO - Date range filter (2025-01 to 2025-01): 4/4 transactions matched
+Feb 17 14:21:05  2026-02-17 14:21:05 - main - INFO - Date range filter (2025-01 to 2025-01): 14/28 transactions matched
+Feb 17 14:21:05  2026-02-17 14:21:05 - main - INFO - Grouped 4 transactions into 1 months
+Feb 17 14:21:05  2026-02-17 14:21:05 - main - INFO - Bank 'motion': 1 months, 4 total transactions
+Feb 17 14:21:05  2026-02-17 14:21:05 - main - INFO - Grouped 14 transactions into 1 months
+Feb 17 14:21:05  2026-02-17 14:21:05 - main - INFO - Bank 'Unmatched': 1 months, 14 total transactions
+Feb 17 14:21:05  2026-02-17 14:21:05 - output.writer - INFO - Generating multi-bank PDF report: /app/output/report_20260217_142105.pdf
+Feb 17 14:21:05  2026-02-17 14:21:05 - output.writer - INFO - Report contains 2 banks, 18 total transactions
+Feb 17 14:21:05  2026-02-17 14:21:05 - output.writer - INFO - Building PDF document...
+Feb 17 14:21:05  2026-02-17 14:21:05 - output.writer - INFO - PDF report generated successfully: /app/output/report_20260217_142105.pdf
+Feb 17 14:21:52  2026-02-17 14:21:52 - root - INFO - Validated file: eStmt_2025-01-31 (1).pdf (0.31 MB)
+Feb 17 14:21:52  2026-02-17 14:21:52 - loaders.pdf_loader - INFO - Loading PDF: /tmp/tmpmpckcmbt.pdf (6 pages)
+Feb 17 14:21:52  2026-02-17 14:21:52 - loaders.pdf_loader - INFO - Extraction complete: 10974 characters from 6 pages (0 empty pages skipped)
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - INFO - Starting extraction from 297 lines
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - INFO - Created transaction: 01/02/25 | Online Banking transfer from CHK 2401 Confirmation... | +6000.00
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - INFO - Created transaction: 01/03/25 | ALTA AP          DES:BILLPMT    ID:VA00647  INDN:Z... | +51680.00
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - INFO - Created transaction: 01/03/25 | MOTION RECRUITME DES:PAYMENT    ID:148780_BHMRP  I... | +1800.00
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - INFO - Created transaction: 01/07/25 | Online transfer from CHK 5344 Confirmation# yrdk9y... | +4226.97
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - INFO - Created transaction: 01/07/25 | Online transfer from CHK 5344 Confirmation# tnwxvl... | +4215.52
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - INFO - Created transaction: 01/07/25 | Online transfer from CHK 5344 Confirmation# wnsuuy... | +150.00
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - INFO - Created transaction: 01/09/25 | Online transfer from CHK 5344 Confirmation# zlu9gt... | +3980.20
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - INFO - Created transaction: 01/10/25 | INTUIT 18130190  DES:BILL_PAY   ID:MANCOM, INC  IN... | +15088.00
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - INFO - Created transaction: 01/10/25 | MOTION RECRUITME DES:PAYMENT    ID:148780_BHMRP  I... | +3000.00
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - INFO - Created transaction: 01/14/25 | Online Banking transfer from CHK 9830 Confirmation... | +20000.00
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - INFO - Created transaction: 01/14/25 | Mobile transfer from CHK 3364 Confirmation# rblxia... | +5000.00
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - INFO - Created transaction: 01/14/25 | Mobile transfer from CHK 3364 Confirmation# mpvud0... | +4500.00
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - INFO - Created transaction: 01/15/25 | AMERICAN EXPRESS DES:LOAN       ID:11180823  INDN:... | +66700.00
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - INFO - Created transaction: 01/17/25 | MOTION RECRUITME DES:PAYMENT    ID:148780_BHMRP  I... | +2887.50
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - INFO - Created transaction: 01/17/25 | ALTA AP          DES:BILLPMT    ID:VA00647  INDN:Z... | +2280.00
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - INFO - Created transaction: 01/24/25 | MOTION RECRUITME DES:PAYMENT    ID:148780_BHMRP  I... | +3000.00
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - INFO - Created transaction: 01/24/25 | ALTA AP          DES:BILLPMT    ID:VA00647  INDN:Z... | +2520.00
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - INFO - Created transaction: 01/27/25 | Mobile transfer from CHK 3364 Confirmation# ql16zn... | +5596.00
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=WIRE TYPE:INTL OUT DATE:250102 TIME:0436 ET TRN:20... (missing amount)
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=WIRE TYPE:INTL OUT DATE:250102 TIME:0452 ET TRN:20... (missing amount)
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=WIRE TYPE:INTL OUT DATE:250102 TIME:0821 ET TRN:20... (missing amount)
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=WIRE TYPE:FX OUT DATE:250103 TIME:1411 ET TRN:2024... (missing amount)
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=APPLECARD GSBANK DES:PAYMENT    ID:4899233  INDN:F... (missing amount)
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/03/25, description=Online transfer to CHK 5171 Confirmation# hfafd3c0... (missing amount)
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/06/25, description=Zelle payment to praveen dabbara Conf# ce6qhor3c -... (missing amount)
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/06/25, description=WIRE TYPE:INTL OUT DATE:250106 TIME:1504 ET TRN:20... (missing amount)
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/13/25, description=WIRE TYPE:FX OUT DATE:250114 TIME:1519 ET TRN:2025... (missing amount)
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/13/25, description=AMERICAN EXPRESS DES:LOAN PMT   ID:11169225  INDN:... (missing amount)
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/15/25, description=CHASE CREDIT CRD DES:EPAY       ID:8102050605  IND... (missing amount)
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/21/25, description=Zelle payment to  FAHIM MIRZA Conf# hbi9w0mh0 -2,5... (missing amount)
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/21/25, description=Online Banking transfer to CHK 9830 Confirmation# ... (missing amount)
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/27/25, description=Online transfer to CHK 5171 Confirmation# fhlq6ri3... (missing amount)
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=Prfd Rwds for Bus-Intl Wire Fee Waiver of $45 -0.0... (missing amount)
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=Prfd Rwds for Bus-Intl Wire Fee Waiver of $45 -0.0... (missing amount)
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=Prfd Rwds for Bus-Intl Wire Fee Waiver of $45 -0.0... (missing amount)
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/06/25, description=Prfd Rwds for Bus-Intl Wire Fee Waiver of $45 -0.0... (missing amount)
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - INFO - Created transaction: 01/01/2026 | [No description]... | -55854.85
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - INFO - Created transaction: 01/09/2026 | [No description]... | -40818.84
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - INFO - Created transaction: 01/17/2026 | [No description]... | -87346.54
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - INFO - Created transaction: 01/02/2026 | [No description]... | -9676.15
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - INFO - Created transaction: 01/10/2026 | [No description]... | -58906.84
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - INFO - Created transaction: 01/21/2026 | [No description]... | -64846.54
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - INFO - Created transaction: 01/03/2026 | [No description]... | -38156.15
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - INFO - Created transaction: 01/13/2026 | [No description]... | -41196.50
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - INFO - Created transaction: 01/24/2026 | [No description]... | -70366.54
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - INFO - Created transaction: 01/06/2026 | [No description]... | -28246.15
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - INFO - Created transaction: 01/14/2026 | [No description]... | -70696.50
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - INFO - Created transaction: 01/27/2026 | [No description]... | -75122.54
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - INFO - Created transaction: 01/07/2026 | [No description]... | -36838.64
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - INFO - Created transaction: 01/15/2026 | [No description]... | -82179.04
+Feb 17 14:21:52  2026-02-17 14:21:52 - extractors.regex_extractor - INFO - Extraction complete: 32 transactions found, 0 multi-line merges, 4 category changes
+Feb 17 14:21:52  2026-02-17 14:21:52 - validators.financial_validator - INFO - Validation complete: 32 valid, 0 invalid out of 32 total
+Feb 17 14:21:52  2026-02-17 14:21:52 - main - INFO - Found 24 unmatched transactions
+Feb 17 14:21:52  2026-02-17 14:21:52 - main - INFO - Keyword 'motion': 4 transactions matched
+Feb 17 14:21:52  2026-02-17 14:21:52 - main - INFO - Keyword 'shoaib': 4 transactions matched
+Feb 17 14:21:52  2026-02-17 14:21:52 - main - INFO - Keyword 'Unmatched': 24 transactions matched
+Feb 17 14:21:52  2026-02-17 14:21:52 - main - INFO - Date range filter (2025-01 to 2025-01): 4/4 transactions matched
+Feb 17 14:21:52  2026-02-17 14:21:52 - main - INFO - Date range filter (2025-01 to 2025-01): 4/4 transactions matched
+Feb 17 14:21:52  2026-02-17 14:21:52 - main - INFO - Date range filter (2025-01 to 2025-01): 10/24 transactions matched
+Feb 17 14:21:52  2026-02-17 14:21:52 - main - INFO - Grouped 4 transactions into 1 months
+Feb 17 14:21:52  2026-02-17 14:21:52 - main - INFO - Bank 'motion': 1 months, 4 total transactions
+Feb 17 14:21:52  2026-02-17 14:21:52 - main - INFO - Grouped 4 transactions into 1 months
+Feb 17 14:21:52  2026-02-17 14:21:52 - main - INFO - Bank 'shoaib': 1 months, 4 total transactions
+Feb 17 14:21:52  2026-02-17 14:21:52 - main - INFO - Grouped 10 transactions into 1 months
+Feb 17 14:21:52  2026-02-17 14:21:52 - main - INFO - Bank 'Unmatched': 1 months, 10 total transactions
+Feb 17 14:21:52  2026-02-17 14:21:52 - output.writer - INFO - Generating multi-bank PDF report: /app/output/report_20260217_142152.pdf
+Feb 17 14:21:52  2026-02-17 14:21:52 - output.writer - INFO - Report contains 3 banks, 18 total transactions
+Feb 17 14:21:52  2026-02-17 14:21:52 - output.writer - INFO - Building PDF document...
+Feb 17 14:21:52  2026-02-17 14:21:52 - output.writer - INFO - PDF report generated successfully: /app/output/report_20260217_142152.pdf
+Feb 17 14:22:53  2026-02-17 14:22:53 - root - INFO - Validated file: eStmt_2025-01-31 (1).pdf (0.31 MB)
+Feb 17 14:22:53  2026-02-17 14:22:53 - loaders.pdf_loader - INFO - Loading PDF: /tmp/tmptch7q43t.pdf (6 pages)
+Feb 17 14:22:53  2026-02-17 14:22:53 - loaders.pdf_loader - INFO - Extraction complete: 10974 characters from 6 pages (0 empty pages skipped)
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - INFO - Starting extraction from 297 lines
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - INFO - Created transaction: 01/02/25 | Online Banking transfer from CHK 2401 Confirmation... | +6000.00
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - INFO - Created transaction: 01/03/25 | ALTA AP          DES:BILLPMT    ID:VA00647  INDN:Z... | +51680.00
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - INFO - Created transaction: 01/03/25 | MOTION RECRUITME DES:PAYMENT    ID:148780_BHMRP  I... | +1800.00
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - INFO - Created transaction: 01/07/25 | Online transfer from CHK 5344 Confirmation# yrdk9y... | +4226.97
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - INFO - Created transaction: 01/07/25 | Online transfer from CHK 5344 Confirmation# tnwxvl... | +4215.52
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - INFO - Created transaction: 01/07/25 | Online transfer from CHK 5344 Confirmation# wnsuuy... | +150.00
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - INFO - Created transaction: 01/09/25 | Online transfer from CHK 5344 Confirmation# zlu9gt... | +3980.20
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - INFO - Created transaction: 01/10/25 | INTUIT 18130190  DES:BILL_PAY   ID:MANCOM, INC  IN... | +15088.00
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - INFO - Created transaction: 01/10/25 | MOTION RECRUITME DES:PAYMENT    ID:148780_BHMRP  I... | +3000.00
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - INFO - Created transaction: 01/14/25 | Online Banking transfer from CHK 9830 Confirmation... | +20000.00
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - INFO - Created transaction: 01/14/25 | Mobile transfer from CHK 3364 Confirmation# rblxia... | +5000.00
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - INFO - Created transaction: 01/14/25 | Mobile transfer from CHK 3364 Confirmation# mpvud0... | +4500.00
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - INFO - Created transaction: 01/15/25 | AMERICAN EXPRESS DES:LOAN       ID:11180823  INDN:... | +66700.00
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - INFO - Created transaction: 01/17/25 | MOTION RECRUITME DES:PAYMENT    ID:148780_BHMRP  I... | +2887.50
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - INFO - Created transaction: 01/17/25 | ALTA AP          DES:BILLPMT    ID:VA00647  INDN:Z... | +2280.00
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - INFO - Created transaction: 01/24/25 | MOTION RECRUITME DES:PAYMENT    ID:148780_BHMRP  I... | +3000.00
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - INFO - Created transaction: 01/24/25 | ALTA AP          DES:BILLPMT    ID:VA00647  INDN:Z... | +2520.00
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - INFO - Created transaction: 01/27/25 | Mobile transfer from CHK 3364 Confirmation# ql16zn... | +5596.00
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=WIRE TYPE:INTL OUT DATE:250102 TIME:0436 ET TRN:20... (missing amount)
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=WIRE TYPE:INTL OUT DATE:250102 TIME:0452 ET TRN:20... (missing amount)
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=WIRE TYPE:INTL OUT DATE:250102 TIME:0821 ET TRN:20... (missing amount)
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=WIRE TYPE:FX OUT DATE:250103 TIME:1411 ET TRN:2024... (missing amount)
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=APPLECARD GSBANK DES:PAYMENT    ID:4899233  INDN:F... (missing amount)
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/03/25, description=Online transfer to CHK 5171 Confirmation# hfafd3c0... (missing amount)
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/06/25, description=Zelle payment to praveen dabbara Conf# ce6qhor3c -... (missing amount)
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/06/25, description=WIRE TYPE:INTL OUT DATE:250106 TIME:1504 ET TRN:20... (missing amount)
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/13/25, description=WIRE TYPE:FX OUT DATE:250114 TIME:1519 ET TRN:2025... (missing amount)
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/13/25, description=AMERICAN EXPRESS DES:LOAN PMT   ID:11169225  INDN:... (missing amount)
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/15/25, description=CHASE CREDIT CRD DES:EPAY       ID:8102050605  IND... (missing amount)
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/21/25, description=Zelle payment to  FAHIM MIRZA Conf# hbi9w0mh0 -2,5... (missing amount)
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/21/25, description=Online Banking transfer to CHK 9830 Confirmation# ... (missing amount)
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/27/25, description=Online transfer to CHK 5171 Confirmation# fhlq6ri3... (missing amount)
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=Prfd Rwds for Bus-Intl Wire Fee Waiver of $45 -0.0... (missing amount)
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=Prfd Rwds for Bus-Intl Wire Fee Waiver of $45 -0.0... (missing amount)
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=Prfd Rwds for Bus-Intl Wire Fee Waiver of $45 -0.0... (missing amount)
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/06/25, description=Prfd Rwds for Bus-Intl Wire Fee Waiver of $45 -0.0... (missing amount)
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - INFO - Created transaction: 01/01/2026 | [No description]... | -55854.85
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - INFO - Created transaction: 01/09/2026 | [No description]... | -40818.84
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - INFO - Created transaction: 01/17/2026 | [No description]... | -87346.54
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - INFO - Created transaction: 01/02/2026 | [No description]... | -9676.15
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - INFO - Created transaction: 01/10/2026 | [No description]... | -58906.84
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - INFO - Created transaction: 01/21/2026 | [No description]... | -64846.54
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - INFO - Created transaction: 01/03/2026 | [No description]... | -38156.15
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - INFO - Created transaction: 01/13/2026 | [No description]... | -41196.50
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - INFO - Created transaction: 01/24/2026 | [No description]... | -70366.54
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - INFO - Created transaction: 01/06/2026 | [No description]... | -28246.15
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - INFO - Created transaction: 01/14/2026 | [No description]... | -70696.50
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - INFO - Created transaction: 01/27/2026 | [No description]... | -75122.54
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - INFO - Created transaction: 01/07/2026 | [No description]... | -36838.64
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - INFO - Created transaction: 01/15/2026 | [No description]... | -82179.04
+Feb 17 14:22:53  2026-02-17 14:22:53 - extractors.regex_extractor - INFO - Extraction complete: 32 transactions found, 0 multi-line merges, 4 category changes
+Feb 17 14:22:53  2026-02-17 14:22:53 - validators.financial_validator - INFO - Validation complete: 32 valid, 0 invalid out of 32 total
+Feb 17 14:22:53  2026-02-17 14:22:53 - main - INFO - Found 23 unmatched transactions
+Feb 17 14:22:53  2026-02-17 14:22:53 - main - INFO - Keyword 'motion': 4 transactions matched
+Feb 17 14:22:53  2026-02-17 14:22:53 - main - INFO - Keyword 'shoaib': 4 transactions matched
+Feb 17 14:22:53  2026-02-17 14:22:53 - main - INFO - Keyword 'american': 1 transactions matched
+Feb 17 14:22:53  2026-02-17 14:22:53 - main - INFO - Keyword 'Unmatched': 23 transactions matched
+Feb 17 14:22:53  2026-02-17 14:22:53 - main - INFO - Date range filter (2025-01 to 2025-01): 4/4 transactions matched
+Feb 17 14:22:53  2026-02-17 14:22:53 - main - INFO - Date range filter (2025-01 to 2025-01): 4/4 transactions matched
+Feb 17 14:22:53  2026-02-17 14:22:53 - main - INFO - Date range filter (2025-01 to 2025-01): 1/1 transactions matched
+Feb 17 14:22:53  2026-02-17 14:22:53 - main - INFO - Date range filter (2025-01 to 2025-01): 9/23 transactions matched
+Feb 17 14:22:53  2026-02-17 14:22:53 - main - INFO - Grouped 4 transactions into 1 months
+Feb 17 14:22:53  2026-02-17 14:22:53 - main - INFO - Bank 'motion': 1 months, 4 total transactions
+Feb 17 14:22:53  2026-02-17 14:22:53 - main - INFO - Grouped 4 transactions into 1 months
+Feb 17 14:22:53  2026-02-17 14:22:53 - main - INFO - Bank 'shoaib': 1 months, 4 total transactions
+Feb 17 14:22:53  2026-02-17 14:22:53 - main - INFO - Grouped 1 transactions into 1 months
+Feb 17 14:22:53  2026-02-17 14:22:53 - main - INFO - Bank 'american': 1 months, 1 total transactions
+Feb 17 14:22:53  2026-02-17 14:22:53 - main - INFO - Grouped 9 transactions into 1 months
+Feb 17 14:22:53  2026-02-17 14:22:53 - main - INFO - Bank 'Unmatched': 1 months, 9 total transactions
+Feb 17 14:22:53  2026-02-17 14:22:53 - output.writer - INFO - Generating multi-bank PDF report: /app/output/report_20260217_142253.pdf
+Feb 17 14:22:53  2026-02-17 14:22:53 - output.writer - INFO - Report contains 4 banks, 18 total transactions
+Feb 17 14:22:53  2026-02-17 14:22:53 - output.writer - INFO - Building PDF document...
+Feb 17 14:22:54  2026-02-17 14:22:54 - output.writer - INFO - PDF report generated successfully: /app/output/report_20260217_142253.pdf
+Feb 17 14:25:16  2026-02-17 14:25:16 - root - INFO - Validated file: eStmt_2025-01-31 (1).pdf (0.31 MB)
+Feb 17 14:25:16  2026-02-17 14:25:16 - loaders.pdf_loader - INFO - Loading PDF: /tmp/tmpc501u9dg.pdf (6 pages)
+Feb 17 14:25:16  2026-02-17 14:25:16 - loaders.pdf_loader - INFO - Extraction complete: 10974 characters from 6 pages (0 empty pages skipped)
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - INFO - Starting extraction from 297 lines
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - INFO - Created transaction: 01/02/25 | Online Banking transfer from CHK 2401 Confirmation... | +6000.00
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - INFO - Created transaction: 01/03/25 | ALTA AP          DES:BILLPMT    ID:VA00647  INDN:Z... | +51680.00
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - INFO - Created transaction: 01/03/25 | MOTION RECRUITME DES:PAYMENT    ID:148780_BHMRP  I... | +1800.00
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - INFO - Created transaction: 01/07/25 | Online transfer from CHK 5344 Confirmation# yrdk9y... | +4226.97
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - INFO - Created transaction: 01/07/25 | Online transfer from CHK 5344 Confirmation# tnwxvl... | +4215.52
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - INFO - Created transaction: 01/07/25 | Online transfer from CHK 5344 Confirmation# wnsuuy... | +150.00
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - INFO - Created transaction: 01/09/25 | Online transfer from CHK 5344 Confirmation# zlu9gt... | +3980.20
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - INFO - Created transaction: 01/10/25 | INTUIT 18130190  DES:BILL_PAY   ID:MANCOM, INC  IN... | +15088.00
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - INFO - Created transaction: 01/10/25 | MOTION RECRUITME DES:PAYMENT    ID:148780_BHMRP  I... | +3000.00
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - INFO - Created transaction: 01/14/25 | Online Banking transfer from CHK 9830 Confirmation... | +20000.00
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - INFO - Created transaction: 01/14/25 | Mobile transfer from CHK 3364 Confirmation# rblxia... | +5000.00
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - INFO - Created transaction: 01/14/25 | Mobile transfer from CHK 3364 Confirmation# mpvud0... | +4500.00
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - INFO - Created transaction: 01/15/25 | AMERICAN EXPRESS DES:LOAN       ID:11180823  INDN:... | +66700.00
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - INFO - Created transaction: 01/17/25 | MOTION RECRUITME DES:PAYMENT    ID:148780_BHMRP  I... | +2887.50
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - INFO - Created transaction: 01/17/25 | ALTA AP          DES:BILLPMT    ID:VA00647  INDN:Z... | +2280.00
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - INFO - Created transaction: 01/24/25 | MOTION RECRUITME DES:PAYMENT    ID:148780_BHMRP  I... | +3000.00
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - INFO - Created transaction: 01/24/25 | ALTA AP          DES:BILLPMT    ID:VA00647  INDN:Z... | +2520.00
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - INFO - Created transaction: 01/27/25 | Mobile transfer from CHK 3364 Confirmation# ql16zn... | +5596.00
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=WIRE TYPE:INTL OUT DATE:250102 TIME:0436 ET TRN:20... (missing amount)
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=WIRE TYPE:INTL OUT DATE:250102 TIME:0452 ET TRN:20... (missing amount)
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=WIRE TYPE:INTL OUT DATE:250102 TIME:0821 ET TRN:20... (missing amount)
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=WIRE TYPE:FX OUT DATE:250103 TIME:1411 ET TRN:2024... (missing amount)
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=APPLECARD GSBANK DES:PAYMENT    ID:4899233  INDN:F... (missing amount)
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/03/25, description=Online transfer to CHK 5171 Confirmation# hfafd3c0... (missing amount)
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/06/25, description=Zelle payment to praveen dabbara Conf# ce6qhor3c -... (missing amount)
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/06/25, description=WIRE TYPE:INTL OUT DATE:250106 TIME:1504 ET TRN:20... (missing amount)
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/13/25, description=WIRE TYPE:FX OUT DATE:250114 TIME:1519 ET TRN:2025... (missing amount)
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/13/25, description=AMERICAN EXPRESS DES:LOAN PMT   ID:11169225  INDN:... (missing amount)
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/15/25, description=CHASE CREDIT CRD DES:EPAY       ID:8102050605  IND... (missing amount)
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/21/25, description=Zelle payment to  FAHIM MIRZA Conf# hbi9w0mh0 -2,5... (missing amount)
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/21/25, description=Online Banking transfer to CHK 9830 Confirmation# ... (missing amount)
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/27/25, description=Online transfer to CHK 5171 Confirmation# fhlq6ri3... (missing amount)
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=Prfd Rwds for Bus-Intl Wire Fee Waiver of $45 -0.0... (missing amount)
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=Prfd Rwds for Bus-Intl Wire Fee Waiver of $45 -0.0... (missing amount)
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=Prfd Rwds for Bus-Intl Wire Fee Waiver of $45 -0.0... (missing amount)
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/06/25, description=Prfd Rwds for Bus-Intl Wire Fee Waiver of $45 -0.0... (missing amount)
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - INFO - Created transaction: 01/01/2026 | [No description]... | -55854.85
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - INFO - Created transaction: 01/09/2026 | [No description]... | -40818.84
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - INFO - Created transaction: 01/17/2026 | [No description]... | -87346.54
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - INFO - Created transaction: 01/02/2026 | [No description]... | -9676.15
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - INFO - Created transaction: 01/10/2026 | [No description]... | -58906.84
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - INFO - Created transaction: 01/21/2026 | [No description]... | -64846.54
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - INFO - Created transaction: 01/03/2026 | [No description]... | -38156.15
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - INFO - Created transaction: 01/13/2026 | [No description]... | -41196.50
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - INFO - Created transaction: 01/24/2026 | [No description]... | -70366.54
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - INFO - Created transaction: 01/06/2026 | [No description]... | -28246.15
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - INFO - Created transaction: 01/14/2026 | [No description]... | -70696.50
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - INFO - Created transaction: 01/27/2026 | [No description]... | -75122.54
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - INFO - Created transaction: 01/07/2026 | [No description]... | -36838.64
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - INFO - Created transaction: 01/15/2026 | [No description]... | -82179.04
+Feb 17 14:25:16  2026-02-17 14:25:16 - extractors.regex_extractor - INFO - Extraction complete: 32 transactions found, 0 multi-line merges, 4 category changes
+Feb 17 14:25:16  2026-02-17 14:25:16 - validators.financial_validator - INFO - Validation complete: 32 valid, 0 invalid out of 32 total
+Feb 17 14:25:16  2026-02-17 14:25:16 - main - INFO - Found 24 unmatched transactions
+Feb 17 14:25:16  2026-02-17 14:25:16 - main - INFO - Keyword 'motion': 4 transactions matched
+Feb 17 14:25:16  2026-02-17 14:25:16 - main - INFO - Keyword 'shoaib': 4 transactions matched
+Feb 17 14:25:16  2026-02-17 14:25:16 - main - INFO - Keyword 'Unmatched': 24 transactions matched
+Feb 17 14:25:16  2026-02-17 14:25:16 - main - INFO - Date range filter (2025-01 to 2025-01): 4/4 transactions matched
+Feb 17 14:25:16  2026-02-17 14:25:16 - main - INFO - Date range filter (2025-01 to 2025-01): 4/4 transactions matched
+Feb 17 14:25:16  2026-02-17 14:25:16 - main - INFO - Date range filter (2025-01 to 2025-01): 0/0 transactions matched
+Feb 17 14:25:16  2026-02-17 14:25:16 - main - INFO - Date range filter (2025-01 to 2025-01): 10/24 transactions matched
+Feb 17 14:25:16  2026-02-17 14:25:16 - main - INFO - Grouped 4 transactions into 1 months
+Feb 17 14:25:16  2026-02-17 14:25:16 - main - INFO - Bank 'motion': 1 months, 4 total transactions
+Feb 17 14:25:16  2026-02-17 14:25:16 - main - INFO - Grouped 4 transactions into 1 months
+Feb 17 14:25:16  2026-02-17 14:25:16 - main - INFO - Bank 'shoaib': 1 months, 4 total transactions
+Feb 17 14:25:16  2026-02-17 14:25:16 - main - INFO - Grouped 10 transactions into 1 months
+Feb 17 14:25:16  2026-02-17 14:25:16 - main - INFO - Bank 'Unmatched': 1 months, 10 total transactions
+Feb 17 14:25:16  2026-02-17 14:25:16 - output.writer - INFO - Generating multi-bank PDF report: /app/output/report_20260217_142516.pdf
+Feb 17 14:25:16  2026-02-17 14:25:16 - output.writer - INFO - Report contains 3 banks, 18 total transactions
+Feb 17 14:25:16  2026-02-17 14:25:16 - output.writer - INFO - Building PDF document...
+Feb 17 14:25:16  2026-02-17 14:25:16 - output.writer - INFO - PDF report generated successfully: /app/output/report_20260217_142516.pdf
+Feb 17 14:26:09  2026-02-17 14:26:09 - root - INFO - Validated file: eStmt_2025-01-31 (1).pdf (0.31 MB)
+Feb 17 14:26:09  2026-02-17 14:26:09 - loaders.pdf_loader - INFO - Loading PDF: /tmp/tmprz49dthw.pdf (6 pages)
+Feb 17 14:26:09  2026-02-17 14:26:09 - loaders.pdf_loader - INFO - Extraction complete: 10974 characters from 6 pages (0 empty pages skipped)
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - INFO - Starting extraction from 297 lines
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - INFO - Created transaction: 01/02/25 | Online Banking transfer from CHK 2401 Confirmation... | +6000.00
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - INFO - Created transaction: 01/03/25 | ALTA AP          DES:BILLPMT    ID:VA00647  INDN:Z... | +51680.00
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - INFO - Created transaction: 01/03/25 | MOTION RECRUITME DES:PAYMENT    ID:148780_BHMRP  I... | +1800.00
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - INFO - Created transaction: 01/07/25 | Online transfer from CHK 5344 Confirmation# yrdk9y... | +4226.97
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - INFO - Created transaction: 01/07/25 | Online transfer from CHK 5344 Confirmation# tnwxvl... | +4215.52
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - INFO - Created transaction: 01/07/25 | Online transfer from CHK 5344 Confirmation# wnsuuy... | +150.00
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - INFO - Created transaction: 01/09/25 | Online transfer from CHK 5344 Confirmation# zlu9gt... | +3980.20
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - INFO - Created transaction: 01/10/25 | INTUIT 18130190  DES:BILL_PAY   ID:MANCOM, INC  IN... | +15088.00
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - INFO - Created transaction: 01/10/25 | MOTION RECRUITME DES:PAYMENT    ID:148780_BHMRP  I... | +3000.00
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - INFO - Created transaction: 01/14/25 | Online Banking transfer from CHK 9830 Confirmation... | +20000.00
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - INFO - Created transaction: 01/14/25 | Mobile transfer from CHK 3364 Confirmation# rblxia... | +5000.00
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - INFO - Created transaction: 01/14/25 | Mobile transfer from CHK 3364 Confirmation# mpvud0... | +4500.00
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - INFO - Created transaction: 01/15/25 | AMERICAN EXPRESS DES:LOAN       ID:11180823  INDN:... | +66700.00
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - INFO - Created transaction: 01/17/25 | MOTION RECRUITME DES:PAYMENT    ID:148780_BHMRP  I... | +2887.50
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - INFO - Created transaction: 01/17/25 | ALTA AP          DES:BILLPMT    ID:VA00647  INDN:Z... | +2280.00
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - INFO - Created transaction: 01/24/25 | MOTION RECRUITME DES:PAYMENT    ID:148780_BHMRP  I... | +3000.00
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - INFO - Created transaction: 01/24/25 | ALTA AP          DES:BILLPMT    ID:VA00647  INDN:Z... | +2520.00
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - INFO - Created transaction: 01/27/25 | Mobile transfer from CHK 3364 Confirmation# ql16zn... | +5596.00
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=WIRE TYPE:INTL OUT DATE:250102 TIME:0436 ET TRN:20... (missing amount)
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=WIRE TYPE:INTL OUT DATE:250102 TIME:0452 ET TRN:20... (missing amount)
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=WIRE TYPE:INTL OUT DATE:250102 TIME:0821 ET TRN:20... (missing amount)
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=WIRE TYPE:FX OUT DATE:250103 TIME:1411 ET TRN:2024... (missing amount)
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=APPLECARD GSBANK DES:PAYMENT    ID:4899233  INDN:F... (missing amount)
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/03/25, description=Online transfer to CHK 5171 Confirmation# hfafd3c0... (missing amount)
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/06/25, description=Zelle payment to praveen dabbara Conf# ce6qhor3c -... (missing amount)
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/06/25, description=WIRE TYPE:INTL OUT DATE:250106 TIME:1504 ET TRN:20... (missing amount)
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/13/25, description=WIRE TYPE:FX OUT DATE:250114 TIME:1519 ET TRN:2025... (missing amount)
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/13/25, description=AMERICAN EXPRESS DES:LOAN PMT   ID:11169225  INDN:... (missing amount)
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/15/25, description=CHASE CREDIT CRD DES:EPAY       ID:8102050605  IND... (missing amount)
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/21/25, description=Zelle payment to  FAHIM MIRZA Conf# hbi9w0mh0 -2,5... (missing amount)
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/21/25, description=Online Banking transfer to CHK 9830 Confirmation# ... (missing amount)
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/27/25, description=Online transfer to CHK 5171 Confirmation# fhlq6ri3... (missing amount)
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=Prfd Rwds for Bus-Intl Wire Fee Waiver of $45 -0.0... (missing amount)
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=Prfd Rwds for Bus-Intl Wire Fee Waiver of $45 -0.0... (missing amount)
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/02/25, description=Prfd Rwds for Bus-Intl Wire Fee Waiver of $45 -0.0... (missing amount)
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/06/25, description=Prfd Rwds for Bus-Intl Wire Fee Waiver of $45 -0.0... (missing amount)
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - INFO - Created transaction: 01/01/2026 | [No description]... | -55854.85
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - INFO - Created transaction: 01/09/2026 | [No description]... | -40818.84
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - INFO - Created transaction: 01/17/2026 | [No description]... | -87346.54
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - INFO - Created transaction: 01/02/2026 | [No description]... | -9676.15
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - INFO - Created transaction: 01/10/2026 | [No description]... | -58906.84
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - INFO - Created transaction: 01/21/2026 | [No description]... | -64846.54
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - INFO - Created transaction: 01/03/2026 | [No description]... | -38156.15
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - INFO - Created transaction: 01/13/2026 | [No description]... | -41196.50
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - INFO - Created transaction: 01/24/2026 | [No description]... | -70366.54
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - INFO - Created transaction: 01/06/2026 | [No description]... | -28246.15
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - INFO - Created transaction: 01/14/2026 | [No description]... | -70696.50
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - INFO - Created transaction: 01/27/2026 | [No description]... | -75122.54
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - INFO - Created transaction: 01/07/2026 | [No description]... | -36838.64
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - INFO - Created transaction: 01/15/2026 | [No description]... | -82179.04
+Feb 17 14:26:09  2026-02-17 14:26:09 - extractors.regex_extractor - INFO - Extraction complete: 32 transactions found, 0 multi-line merges, 4 category changes
+Feb 17 14:26:09  2026-02-17 14:26:09 - validators.financial_validator - INFO - Validation complete: 32 valid, 0 invalid out of 32 total
+Feb 17 14:26:09  2026-02-17 14:26:09 - main - INFO - Found 24 unmatched transactions
+Feb 17 14:26:09  2026-02-17 14:26:09 - main - INFO - Keyword 'motion': 4 transactions matched
+Feb 17 14:26:09  2026-02-17 14:26:09 - main - INFO - Keyword 'shoaib': 4 transactions matched
+Feb 17 14:26:09  2026-02-17 14:26:09 - main - INFO - Keyword 'Unmatched': 24 transactions matched
+Feb 17 14:26:09  2026-02-17 14:26:09 - main - INFO - Date range filter (2025-01 to 2025-01): 4/4 transactions matched
+Feb 17 14:26:09  2026-02-17 14:26:09 - main - INFO - Date range filter (2025-01 to 2025-01): 4/4 transactions matched
+Feb 17 14:26:09  2026-02-17 14:26:09 - main - INFO - Date range filter (2025-01 to 2025-01): 0/0 transactions matched
+Feb 17 14:26:09  2026-02-17 14:26:09 - main - INFO - Date range filter (2025-01 to 2025-01): 10/24 transactions matched
+Feb 17 14:26:09  2026-02-17 14:26:09 - main - INFO - Grouped 4 transactions into 1 months
+Feb 17 14:26:09  2026-02-17 14:26:09 - main - INFO - Bank 'motion': 1 months, 4 total transactions
+Feb 17 14:26:09  2026-02-17 14:26:09 - main - INFO - Grouped 4 transactions into 1 months
+Feb 17 14:26:09  2026-02-17 14:26:09 - main - INFO - Bank 'shoaib': 1 months, 4 total transactions
+Feb 17 14:26:09  2026-02-17 14:26:09 - main - INFO - Grouped 10 transactions into 1 months
+Feb 17 14:26:09  2026-02-17 14:26:09 - main - INFO - Bank 'Unmatched': 1 months, 10 total transactions
+Feb 17 14:26:09  2026-02-17 14:26:09 - output.writer - INFO - Generating multi-bank PDF report: /app/output/report_20260217_142609.pdf
+Feb 17 14:26:09  2026-02-17 14:26:09 - output.writer - INFO - Report contains 3 banks, 18 total transactions
+Feb 17 14:26:09  2026-02-17 14:26:09 - output.writer - INFO - Building PDF document...
+Feb 17 14:26:09  2026-02-17 14:26:09 - output.writer - INFO - PDF report generated successfully: /app/output/report_20260217_142609.pdf
+Feb 17 14:27:12  2026-02-17 14:27:12 - root - INFO - Validated file: 20250131-statements-1980-.pdf (0.10 MB)
+Feb 17 14:27:12  2026-02-17 14:27:12 - loaders.pdf_loader - INFO - Loading PDF: /tmp/tmprekd4sqy.pdf (4 pages)
+Feb 17 14:27:12  2026-02-17 14:27:12 - loaders.pdf_loader - INFO - Extraction complete: 8523 characters from 4 pages (0 empty pages skipped)
+Feb 17 14:27:12  2026-02-17 14:27:12 - extractors.regex_extractor - INFO - Starting extraction from 294 lines
+Feb 17 14:27:12  2026-02-17 14:27:12 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/10, description=Orig CO Name:Insource Inc           Orig ID:123302... (missing amount)
+Feb 17 14:27:12  2026-02-17 14:27:12 - extractors.regex_extractor - INFO - Created transaction: 01/21/2026 | Chips Credit Via: Bank of America, N.A./0959 B/O: ... | -1600.00
+Feb 17 14:27:12  2026-02-17 14:27:12 - extractors.regex_extractor - INFO - Created transaction: 01/24/2026 | Orig CO Name:Insource Inc           Orig ID:123302... | -6365.00
+Feb 17 14:27:12  2026-02-17 14:27:12 - extractors.regex_extractor - INFO - Created transaction: 01/27/2026 | Chips Credit Via: Bank of America, N.A./0959 B/O: ... | -14000.00
+Feb 17 14:27:12  2026-02-17 14:27:12 - extractors.regex_extractor - INFO - Created transaction: 01/27/2026 | Online Transfer From Chk ...8837 Transaction#: 235... | -15000.00
+Feb 17 14:27:12  2026-02-17 14:27:12 - extractors.regex_extractor - INFO - Created transaction: 01/27/2026 | Orig CO Name:'Deel, Ivsaudxow       Orig ID:885161... | -720.00
+Feb 17 14:27:12  2026-02-17 14:27:12 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/03, description=01/03 Online Domestic Wire Transfer Via: Bk Amer N... (missing amount)
+Feb 17 14:27:12  2026-02-17 14:27:12 - extractors.regex_extractor - INFO - Created transaction: 01/27/2026 | 01/27 Online Domestic Wire Transfer Via: Bk Amer N... | -45174.00
+Feb 17 14:27:12  2026-02-17 14:27:12 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/03, description=$17,085.32... (missing amount)
+Feb 17 14:27:12  2026-02-17 14:27:12 - extractors.regex_extractor - INFO - Created transaction: 01/10/2026 | [No description]... | -28485.32
+Feb 17 14:27:12  2026-02-17 14:27:12 - extractors.regex_extractor - INFO - Created transaction: 01/21/2026 | [No description]... | -30085.32
+Feb 17 14:27:12  2026-02-17 14:27:12 - extractors.regex_extractor - INFO - Created transaction: 01/24/2026 | [No description]... | -36450.32
+Feb 17 14:27:12  2026-02-17 14:27:12 - extractors.regex_extractor - INFO - Created transaction: 01/27/2026 | [No description]... | -20996.32
+Feb 17 14:27:12  2026-02-17 14:27:12 - extractors.regex_extractor - INFO - Extraction complete: 10 transactions found, 0 multi-line merges, 6 category changes
+Feb 17 14:27:12  2026-02-17 14:27:12 - validators.financial_validator - INFO - Validation complete: 10 valid, 0 invalid out of 10 total
+Feb 17 14:27:12  2026-02-17 14:27:12 - main - INFO - Found 6 unmatched transactions
+Feb 17 14:27:12  2026-02-17 14:27:12 - main - INFO - Keyword 'zeers': 4 transactions matched
+Feb 17 14:27:12  2026-02-17 14:27:12 - main - INFO - Keyword 'Unmatched': 6 transactions matched
+Feb 17 14:27:12  2026-02-17 14:27:12 - main - INFO - Date range filter (2025-01 to 2025-01): 0/4 transactions matched
+Feb 17 14:27:12  2026-02-17 14:27:12 - main - INFO - Date range filter (2025-01 to 2025-01): 0/6 transactions matched
+Feb 17 14:28:11  2026-02-17 14:28:11 - root - INFO - Validated file: 20250131-statements-1980-.pdf (0.10 MB)
+Feb 17 14:28:11  2026-02-17 14:28:11 - loaders.pdf_loader - INFO - Loading PDF: /tmp/tmpyer64i62.pdf (4 pages)
+Feb 17 14:28:11  2026-02-17 14:28:11 - loaders.pdf_loader - INFO - Extraction complete: 8523 characters from 4 pages (0 empty pages skipped)
+Feb 17 14:28:11  2026-02-17 14:28:11 - extractors.regex_extractor - INFO - Starting extraction from 294 lines
+Feb 17 14:28:11  2026-02-17 14:28:11 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/10, description=Orig CO Name:Insource Inc           Orig ID:123302... (missing amount)
+Feb 17 14:28:11  2026-02-17 14:28:11 - extractors.regex_extractor - INFO - Created transaction: 01/21/2026 | Chips Credit Via: Bank of America, N.A./0959 B/O: ... | -1600.00
+Feb 17 14:28:11  2026-02-17 14:28:11 - extractors.regex_extractor - INFO - Created transaction: 01/24/2026 | Orig CO Name:Insource Inc           Orig ID:123302... | -6365.00
+Feb 17 14:28:11  2026-02-17 14:28:11 - extractors.regex_extractor - INFO - Created transaction: 01/27/2026 | Chips Credit Via: Bank of America, N.A./0959 B/O: ... | -14000.00
+Feb 17 14:28:11  2026-02-17 14:28:11 - extractors.regex_extractor - INFO - Created transaction: 01/27/2026 | Online Transfer From Chk ...8837 Transaction#: 235... | -15000.00
+Feb 17 14:28:11  2026-02-17 14:28:11 - extractors.regex_extractor - INFO - Created transaction: 01/27/2026 | Orig CO Name:'Deel, Ivsaudxow       Orig ID:885161... | -720.00
+Feb 17 14:28:11  2026-02-17 14:28:11 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/03, description=01/03 Online Domestic Wire Transfer Via: Bk Amer N... (missing amount)
+Feb 17 14:28:11  2026-02-17 14:28:11 - extractors.regex_extractor - INFO - Created transaction: 01/27/2026 | 01/27 Online Domestic Wire Transfer Via: Bk Amer N... | -45174.00
+Feb 17 14:28:11  2026-02-17 14:28:11 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/03, description=$17,085.32... (missing amount)
+Feb 17 14:28:11  2026-02-17 14:28:11 - extractors.regex_extractor - INFO - Created transaction: 01/10/2026 | [No description]... | -28485.32
+Feb 17 14:28:11  2026-02-17 14:28:11 - extractors.regex_extractor - INFO - Created transaction: 01/21/2026 | [No description]... | -30085.32
+Feb 17 14:28:11  2026-02-17 14:28:11 - extractors.regex_extractor - INFO - Created transaction: 01/24/2026 | [No description]... | -36450.32
+Feb 17 14:28:11  2026-02-17 14:28:11 - extractors.regex_extractor - INFO - Created transaction: 01/27/2026 | [No description]... | -20996.32
+Feb 17 14:28:11  2026-02-17 14:28:11 - extractors.regex_extractor - INFO - Extraction complete: 10 transactions found, 0 multi-line merges, 6 category changes
+Feb 17 14:28:11  2026-02-17 14:28:11 - validators.financial_validator - INFO - Validation complete: 10 valid, 0 invalid out of 10 total
+Feb 17 14:28:11  2026-02-17 14:28:11 - main - INFO - Found 6 unmatched transactions
+Feb 17 14:28:11  2026-02-17 14:28:11 - main - INFO - Keyword 'zeers': 4 transactions matched
+Feb 17 14:28:11  2026-02-17 14:28:11 - main - INFO - Keyword 'Unmatched': 6 transactions matched
+Feb 17 14:28:11  2026-02-17 14:28:11 - main - INFO - Date range filter (2026-01 to 2026-01): 4/4 transactions matched
+Feb 17 14:28:11  2026-02-17 14:28:11 - main - INFO - Date range filter (2026-01 to 2026-01): 6/6 transactions matched
+Feb 17 14:28:11  2026-02-17 14:28:11 - main - INFO - Grouped 4 transactions into 1 months
+Feb 17 14:28:11  2026-02-17 14:28:11 - main - INFO - Bank 'zeers': 1 months, 4 total transactions
+Feb 17 14:28:11  2026-02-17 14:28:11 - main - INFO - Grouped 6 transactions into 1 months
+Feb 17 14:28:11  2026-02-17 14:28:11 - main - INFO - Bank 'Unmatched': 1 months, 6 total transactions
+Feb 17 14:28:11  2026-02-17 14:28:11 - output.writer - INFO - Generating multi-bank PDF report: /app/output/report_20260217_142811.pdf
+Feb 17 14:28:11  2026-02-17 14:28:11 - output.writer - INFO - Report contains 2 banks, 10 total transactions
+Feb 17 14:28:11  2026-02-17 14:28:11 - output.writer - INFO - Building PDF document...
+Feb 17 14:28:11  2026-02-17 14:28:11 - output.writer - INFO - PDF report generated successfully: /app/output/report_20260217_142811.pdf
+Feb 17 14:59:24  2026-02-17 14:59:24 - root - INFO - Validated file: us_style_ledger_grouped_statement.pdf (0.01 MB)
+Feb 17 14:59:24  2026-02-17 14:59:24 - loaders.pdf_loader - INFO - Loading PDF: /tmp/tmpn9qmu7bc.pdf (7 pages)
+Feb 17 14:59:24  2026-02-17 14:59:24 - loaders.pdf_loader - INFO - Extraction complete: 11470 characters from 7 pages (0 empty pages skipped)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Starting extraction from 395 lines
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/01/25, description=MOTION RECRUITME DES:PAYMENT ID:805040_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/06/25, description=MOTION RECRUITME DES:PAYMENT ID:420920_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/12/25, description=MOTION RECRUITME DES:PAYMENT ID:442764_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/17/25, description=MOTION RECRUITME DES:PAYMENT ID:360001_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/23/25, description=MOTION RECRUITME DES:PAYMENT ID:507513_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=01/27/25, description=MOTION RECRUITME DES:PAYMENT ID:996164_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 01/30/25 | Chips Credit Via: U.S. Bank, N.A. B/O: John Smith ... | +4955.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 02/02/25 | Chips Credit Via: Citibank, N.A. B/O: Ali Khan 3/U... | +4918.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 02/06/25 | Chips Credit Via: U.S. Bank, N.A. B/O: John Smith ... | +1253.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 02/11/25 | Chips Credit Via: U.S. Bank, N.A. B/O: Ali Khan 3/... | +5683.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 02/14/25 | Chips Credit Via: Citibank, N.A. B/O: John Smith 3... | +1328.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 02/19/25 | Chips Credit Via: Capital One, N.A. B/O: John Smit... | +3657.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 02/22/25 | Chips Credit Via: U.S. Bank, N.A. B/O: Sara Ahmed ... | +1587.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 02/27/25 | Chips Credit Via: Citibank, N.A. B/O: Fahim Mirza ... | +2827.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 03/03/25 | Chips Credit Via: U.S. Bank, N.A. B/O: Ali Khan 3/... | +4235.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 03/06/25 | Chips Credit Via: Citibank, N.A. B/O: Sara Ahmed 3... | +3628.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 03/09/25 | Chips Credit Via: U.S. Bank, N.A. B/O: Sara Ahmed ... | +5669.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 03/13/25 | Chips Credit Via: Citibank, N.A. B/O: Ali Khan 3/U... | +5922.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=03/16/25, description=MOTION RECRUITME DES:PAYMENT ID:835129_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=03/22/25, description=MOTION RECRUITME DES:PAYMENT ID:458969_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=03/28/25, description=MOTION RECRUITME DES:PAYMENT ID:956943_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=04/01/25, description=MOTION RECRUITME DES:PAYMENT ID:645759_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=04/06/25, description=MOTION RECRUITME DES:PAYMENT ID:834500_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=04/10/25, description=MOTION RECRUITME DES:PAYMENT ID:609209_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 04/14/25 | Chips Credit Via: Citibank, N.A. B/O: Sara Ahmed 3... | +1318.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 04/19/25 | Chips Credit Via: Citibank, N.A. B/O: Sara Ahmed 3... | +5355.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 04/23/25 | Chips Credit Via: U.S. Bank, N.A. B/O: Fahim Mirza... | +3241.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 04/28/25 | Chips Credit Via: Citibank, N.A. B/O: Ali Khan 3/U... | +4991.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 05/03/25 | Chips Credit Via: Capital One, N.A. B/O: Ali Khan ... | +1287.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 05/07/25 | Chips Credit Via: U.S. Bank, N.A. B/O: Sara Ahmed ... | +2038.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 05/11/25 | Chips Credit Via: Capital One, N.A. B/O: Sara Ahme... | +4213.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 05/14/25 | Chips Credit Via: Citibank, N.A. B/O: Fahim Mirza ... | +5190.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 05/19/25 | Chips Credit Via: Citibank, N.A. B/O: Fahim Mirza ... | +5168.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 05/24/25 | Chips Credit Via: U.S. Bank, N.A. B/O: Fahim Mirza... | +1891.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 05/27/25 | Chips Credit Via: Capital One, N.A. B/O: John Smit... | +2104.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 05/31/25 | Chips Credit Via: U.S. Bank, N.A. B/O: Sara Ahmed ... | +4334.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=06/03/25, description=MOTION RECRUITME DES:PAYMENT ID:964399_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=06/07/25, description=MOTION RECRUITME DES:PAYMENT ID:781782_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=06/12/25, description=MOTION RECRUITME DES:PAYMENT ID:404633_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=06/17/25, description=MOTION RECRUITME DES:PAYMENT ID:844981_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=06/22/25, description=MOTION RECRUITME DES:PAYMENT ID:835279_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=06/28/25, description=MOTION RECRUITME DES:PAYMENT ID:564876_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=07/04/25, description=MOTION RECRUITME DES:PAYMENT ID:895307_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=07/09/25, description=MOTION RECRUITME DES:PAYMENT ID:773151_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=07/14/25, description=MOTION RECRUITME DES:PAYMENT ID:977871_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=07/20/25, description=MOTION RECRUITME DES:PAYMENT ID:546915_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=07/24/25, description=MOTION RECRUITME DES:PAYMENT ID:394378_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=07/29/25, description=MOTION RECRUITME DES:PAYMENT ID:918796_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=08/02/25, description=MOTION RECRUITME DES:PAYMENT ID:915842_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=08/07/25, description=MOTION RECRUITME DES:PAYMENT ID:770899_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=08/13/25, description=MOTION RECRUITME DES:PAYMENT ID:513450_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=08/18/25, description=MOTION RECRUITME DES:PAYMENT ID:219151_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=08/23/25, description=MOTION RECRUITME DES:PAYMENT ID:100210_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=08/26/25, description=MOTION RECRUITME DES:PAYMENT ID:536918_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 08/30/25 | Chips Credit Via: U.S. Bank, N.A. B/O: Sara Ahmed ... | +931.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 09/05/25 | Chips Credit Via: U.S. Bank, N.A. B/O: Sara Ahmed ... | +5229.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 09/08/25 | Chips Credit Via: Citibank, N.A. B/O: John Smith 3... | +2218.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 09/11/25 | Chips Credit Via: Capital One, N.A. B/O: John Smit... | +3774.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 09/15/25 | Chips Credit Via: Capital One, N.A. B/O: Fahim Mir... | +4741.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 09/19/25 | Chips Credit Via: Citibank, N.A. B/O: Sara Ahmed 3... | +3867.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=09/24/25, description=MOTION RECRUITME DES:PAYMENT ID:567523_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=09/28/25, description=MOTION RECRUITME DES:PAYMENT ID:202882_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=10/03/25, description=MOTION RECRUITME DES:PAYMENT ID:696381_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=10/09/25, description=MOTION RECRUITME DES:PAYMENT ID:274945_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=10/12/25, description=MOTION RECRUITME DES:PAYMENT ID:976438_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=10/17/25, description=MOTION RECRUITME DES:PAYMENT ID:814829_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 10/20/25 | Chips Credit Via: U.S. Bank, N.A. B/O: John Smith ... | +4363.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 10/23/25 | Chips Credit Via: Capital One, N.A. B/O: Sara Ahme... | +1281.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 10/28/25 | Chips Credit Via: Capital One, N.A. B/O: John Smit... | +988.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 11/02/25 | Chips Credit Via: Citibank, N.A. B/O: Sara Ahmed 3... | +2851.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 11/08/25 | Chips Credit Via: Citibank, N.A. B/O: John Smith 3... | +3873.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 11/11/25 | Chips Credit Via: U.S. Bank, N.A. B/O: Sara Ahmed ... | +1718.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=11/16/25, description=MOTION RECRUITME DES:PAYMENT ID:165255_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=11/20/25, description=MOTION RECRUITME DES:PAYMENT ID:940273_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=11/25/25, description=MOTION RECRUITME DES:PAYMENT ID:214826_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=11/30/25, description=MOTION RECRUITME DES:PAYMENT ID:250843_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=12/05/25, description=MOTION RECRUITME DES:PAYMENT ID:143121_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - WARNING - Incomplete transaction: date=12/10/25, description=MOTION RECRUITME DES:PAYMENT ID:503623_BHMRP INDN:... (missing amount)
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 12/14/25 | Chips Credit Via: U.S. Bank, N.A. B/O: Ali Khan 3/... | +4305.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 12/17/25 | Chips Credit Via: Capital One, N.A. B/O: John Smit... | +1299.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 12/21/25 | Chips Credit Via: U.S. Bank, N.A. B/O: Fahim Mirza... | +4237.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 12/26/25 | Chips Credit Via: Capital One, N.A. B/O: John Smit... | +2151.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Created transaction: 12/30/25 | Chips Credit Via: U.S. Bank, N.A. B/O: Sara Ahmed ... | +1805.00
+Feb 17 14:59:24  2026-02-17 14:59:24 - extractors.regex_extractor - INFO - Extraction complete: 41 transactions found, 0 multi-line merges, 14 category changes
+Feb 17 14:59:24  2026-02-17 14:59:24 - validators.financial_validator - INFO - Validation complete: 41 valid, 0 invalid out of 41 total
+Feb 17 14:59:24  2026-02-17 14:59:24 - main - INFO - Found 17 unmatched transactions
+Feb 17 14:59:24  2026-02-17 14:59:24 - main - INFO - Keyword 'citibank': 14 transactions matched
+Feb 17 14:59:24  2026-02-17 14:59:24 - main - INFO - Keyword 'capital one': 10 transactions matched
+Feb 17 14:59:24  2026-02-17 14:59:24 - main - INFO - Keyword 'Unmatched': 17 transactions matched
+Feb 17 14:59:24  2026-02-17 14:59:24 - main - INFO - Date range filter (2025-01 to 2025-08): 0/0 transactions matched
+Feb 17 14:59:24  2026-02-17 14:59:24 - main - INFO - Date range filter (2025-01 to 2025-08): 0/0 transactions matched
+Feb 17 14:59:24  2026-02-17 14:59:24 - main - INFO - Date range filter (2025-01 to 2025-08): 10/14 transactions matched
+Feb 17 14:59:24  2026-02-17 14:59:24 - main - INFO - Date range filter (2025-01 to 2025-08): 4/10 transactions matched
+Feb 17 14:59:24  2026-02-17 14:59:24 - main - INFO - Date range filter (2025-01 to 2025-08): 11/17 transactions matched
+Feb 17 14:59:24  2026-02-17 14:59:24 - main - INFO - Grouped 10 transactions into 4 months
+Feb 17 14:59:24  2026-02-17 14:59:24 - main - INFO - Bank 'citibank': 4 months, 10 total transactions
+Feb 17 14:59:24  2026-02-17 14:59:24 - main - INFO - Grouped 4 transactions into 2 months
+Feb 17 14:59:24  2026-02-17 14:59:24 - main - INFO - Bank 'capital one': 2 months, 4 total transactions
+Feb 17 14:59:24  2026-02-17 14:59:24 - main - INFO - Grouped 11 transactions into 6 months
+Feb 17 14:59:24  2026-02-17 14:59:24 - main - INFO - Bank 'Unmatched': 6 months, 11 total transactions
+Feb 17 14:59:24  2026-02-17 14:59:24 - output.writer - INFO - Generating multi-bank PDF report: /app/output/report_20260217_145924.pdf
+Feb 17 14:59:24  2026-02-17 14:59:24 - output.writer - INFO - Report contains 3 banks, 25 total transactions
+Feb 17 14:59:24  2026-02-17 14:59:24 - output.writer - INFO - Building PDF document...
+Feb 17 14:59:24  2026-02-17 14:59:24 - output.writer - INFO - PDF report generated successfully: /app/output/report_20260217_145924.pdf

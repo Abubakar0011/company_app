@@ -21,6 +21,8 @@ class CategoryState:
     """
     Tracks the current category context while parsing bank statements.
     Determines whether transactions should be treated as credits or debits.
+    
+    Note: Add custom headers via add_custom_header() method for non-standard statements.
     """
     
     # Known credit category headers
@@ -31,6 +33,8 @@ class CategoryState:
         "deposits & other credits",
         "credits",
         "deposits",
+        "incoming transfers",
+        "direct deposits",
     }
     
     # Known debit category headers
@@ -43,6 +47,8 @@ class CategoryState:
         "withdrawals",
         "checks paid",
         "atm withdrawals",
+        "outgoing transfers",
+        "payments",
     }
     
     def __init__(self):

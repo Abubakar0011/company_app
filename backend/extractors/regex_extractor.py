@@ -66,11 +66,10 @@ class TransactionExtractor:
         r')'
     )
     
-    # Amount patterns - matches complete amounts with word boundaries
-    # Fixed: Now matches full amount as one unit (e.g., "6,000.00" not ['6', '000', '00'])
-    # \b = word boundary ensures we match complete numbers
-    # Made decimal mandatory since bank amounts always have .XX cents
-    AMOUNT_PATTERN = re.compile(r'\b(\d{1,3}(?:,\d{3})*\.\d{2})\b')
+    # Amount patterns - matches complete amounts
+    # Supports: 1,234.56 or -1,234.56 or +1,234.56
+    # Decimal .XX is mandatory since bank amounts always have cents
+    AMOUNT_PATTERN = re.compile(r'[-+]?(\d{1,3}(?:,\d{3})*\.\d{2})\b')
     
     def __init__(self):
         """Initialize extractor with category state tracker."""
@@ -181,8 +180,9 @@ class TransactionExtractor:
             self.pending_description = []
             return
         
-        # Check if line is just an amount (number with optional comma/decimal)
-        amount_only_match = re.match(r'^\s*(\d{1,3}(?:,\d{3})*(?:\.\d{2})?)\s*$', line)
+        # Check if line is just an amount (supports both comma-formatted and plain numbers)
+        # Matches: 3000.00, 3,000.00, -3000.00, +3,000.00, 3000, etc.
+        amount_only_match = re.match(r'^\s*[-+]?((?:\d{1,3}(?:,\d{3})+|\d+)(?:\.\d{2})?)\s*$', line)
         if amount_only_match and self.pending_date:
             # This is the amount for the pending transaction
             amount_str = amount_only_match.group(1)
@@ -227,7 +227,57 @@ class TransactionExtractor:
             return
         
         # If we have a pending date, this line is part of the description
+        # BUT first check if it contains an embedded amount
         if self.pending_date:
+            # Look for amount embedded in this description line
+            amount_match = self.AMOUNT_PATTERN.search(line)
+            if amount_match:
+                # Found embedded amount! Extract it
+                amount_str = amount_match.group(1)
+                amount_pos = amount_match.start()
+                
+                # Description is everything BEFORE the amount
+                desc_part = line[:amount_pos].strip()
+                
+                # Add any previous description lines
+                if self.pending_description:
+                    full_description = ' '.join(self.pending_description + ([desc_part] if desc_part else [])).strip()
+                else:
+                    full_description = desc_part if desc_part else "[No description]"
+                
+                # Create transaction with embedded amount
+                try:
+                    amount = self._parse_amount(amount_str)
+                    signed_amount = apply_sign_to_amount(amount, self.category_state.current_state)
+                    
+                    year = datetime.now().year
+                    date_parts = self.pending_date.split('/')
+                    if len(date_parts) == 2:
+                        full_date = f"{self.pending_date}/{year}"
+                    else:
+                        full_date = self.pending_date
+                    
+                    transaction = Transaction(
+                        date=full_date,
+                        description=full_description,
+                        amount=signed_amount,
+                        transaction_type=self.category_state.current_state,
+                        category=self.category_state.current_category
+                    )
+                    
+                    self.transactions.append(transaction)
+                    self.stats["transactions_found"] += 1
+                    logger.info(f"Created transaction: {full_date} | {full_description[:50]}... | {signed_amount:+.2f}")
+                    
+                    # Reset pending data
+                    self.pending_date = None
+                    self.pending_description = []
+                    return
+                    
+                except ValueError as e:
+                    logger.warning(f"Failed to parse embedded amount '{amount_str}': {e}")
+            
+            # No embedded amount found, just add to description
             self.pending_description.append(line)
             return
         

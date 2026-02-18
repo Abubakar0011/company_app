@@ -22,7 +22,7 @@ COPY . .
 ENV PATH="/app/.venv/bin:$PATH"
 
 # Expose ports for both Streamlit (8501) and FastAPI (8000)
-EXPOSE 8501 8000
+EXPOSE 8501
 
 # Default command runs Streamlit frontend using uv run
 # Override with: docker run -p 8000:8000 <image> uv run uvicorn api.main:app --host 0.0.0.0
